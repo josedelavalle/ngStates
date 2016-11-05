@@ -15,6 +15,9 @@
 
 /* slide in from the bottom */
 @keyframes slideOutLeft {
+    to      { transform: translateX(-400%); }
+}
+@keyframes slideOutLeftScreen {
     to      { transform: translateX(-100%); }
 }
 
@@ -41,5 +44,10 @@
     to      { transform: translateY(0); }
 }
 
-  .ng-enter          { animation: scaleUp 0.6s both ease-in-out; z-index: 8888; }
+  .ng-enter          { animation: scaleUp 0.5s both ease-in-out; z-index: 8889; animation-delay: 0.4s}
+  .ng-leave           { animation: slideOutLeftScreen 0.5s both ease-in-out; z-index: 8889; }
+
+#main {
+  .ng-enter          { animation: slideInRight 0.6s both ease-in-out; z-index: 8889; }
   .ng-leave           { animation: slideOutLeft 0.3s both ease-in-out; z-index: 8889; }
+}

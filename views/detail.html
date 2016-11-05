@@ -7,10 +7,14 @@
     <div class="inner">
       <h1>{{stateFullName}}</h1>
       <b>{{stateImageText}}</b>
-      <span class="image main"><img src="{{stateImage}}" alt="{{stateFullName}}" onerror="if (this.src != 'error.jpg') this.src = 'images/pic13.jpg';"/></span>
-
-        <div class="row">
-          <div class="4u 6u(medium) 12u(small)" ng-repeat="detail in stateDetails">
+      <span class="image main">
+        <div class="imageContainer" style="background-image: url('{{stateImage}}');">
+          <!-- <img src="{{stateImage}}" alt="{{stateFullName}}" onerror="if (this.src != 'error.jpg') this.src = 'images/pic13.jpg';"/></span> -->
+        </div>
+        <input type="text" ng-model="search" placeholder="filter me">
+        <br />
+        <div class="row counties">
+          <div class="4u 6u(medium) 12u(small)" ng-repeat="detail in stateDetails | filter:{ name: search }">
             <h2>
               <a href="{{detail.url}}">{{detail.name}}</a>
             </h2>
