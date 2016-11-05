@@ -4,349 +4,399 @@
         "abbreviation": "AL",
         "motto": "Audemus jura nostra defendere",
         "translation": "We Dare Maintain Our Rights",
-        "image" : "http://static3.businessinsider.com/image/5604047dbd86ef14008bcb90-1200/alabama-much-of-the-civil-rights-movement-unfolded-in-alabama-so-the-state-is-home-to-many-landmarks-from-that-time-period-including-the-16th-street-baptist-church-the-church-was-the-first-african-american-church-in-birmingham-and-the-site-of-many-civil-rights-rallies-and-mass-meetings-as-well-the-site-of-a-bombing-in-1963-that-killed-four-girls-attending-sunday-school-a-tragedy-that-added-fire-to-the-movement.jpg"
+        "image" : "http://static3.businessinsider.com/image/5604047dbd86ef14008bcb90-1200/alabama-much-of-the-civil-rights-movement-unfolded-in-alabama-so-the-state-is-home-to-many-landmarks-from-that-time-period-including-the-16th-street-baptist-church-the-church-was-the-first-african-american-church-in-birmingham-and-the-site-of-many-civil-rights-rallies-and-mass-meetings-as-well-the-site-of-a-bombing-in-1963-that-killed-four-girls-attending-sunday-school-a-tragedy-that-added-fire-to-the-movement.jpg",
+        "imagetext" : "Much of the Civil Rights Movement unfolded in Alabama, so the state is home to many landmarks from that time period, including the 16th Street Baptist Church. The church was the first African American church in Birmingham, and the site of many civil rights rallies and mass meetings, as well the site of a bombing in 1963 that killed four girls attending Sunday School, a tragedy that added fire to the movement."
     },
     {
         "name": "Alaska",
         "abbreviation": "AK",
         "motto" : "",
         "translation": "North to the Future",
-        "image" : "http://static2.businessinsider.com/image/5604077f9dd7cc1b008bcd66-1200/alaska-denali-national-park-includes-6-million-acres-of-alaskas-wilderness-and-is-home-to-many-different-kinds-of-wildlife-breathtaking-landscapes-and-denali-the-highest-mountain-peak-in-north-america-with-an-elevation-of-20237-feet.jpg"
+        "image" : "http://static2.businessinsider.com/image/5604077f9dd7cc1b008bcd66-1200/alaska-denali-national-park-includes-6-million-acres-of-alaskas-wilderness-and-is-home-to-many-different-kinds-of-wildlife-breathtaking-landscapes-and-denali-the-highest-mountain-peak-in-north-america-with-an-elevation-of-20237-feet.jpg",
+        "imagetext" : "Denali National Park includes 6 million acres of Alaska's wilderness and is home to many different kinds of wildlife, breathtaking landscapes, and Denali, the highest mountain peak in North America, with an elevation of 20,237 feet."
     },
     {
         "name": "Arizona",
         "abbreviation": "AZ",
         "motto": "Ditat Deus",
         "translation" : "God enriches",
-        "image" : "http://static5.businessinsider.com/image/560408659dd7cc15008bccbe-1200/arizona-the-grand-canyon-is-a-whopping-277-river-miles-long-18-miles-wide-and-a-mile-deep-its-also-the-15th-oldest-national-park-in-america-and-a-unesco-world-heritage-site.jpg"
+        "image" : "http://static5.businessinsider.com/image/560408659dd7cc15008bccbe-1200/arizona-the-grand-canyon-is-a-whopping-277-river-miles-long-18-miles-wide-and-a-mile-deep-its-also-the-15th-oldest-national-park-in-america-and-a-unesco-world-heritage-site.jpg",
+        "imagetext" : "The Grand Canyon is a whopping 277 river miles long, 18 miles wide, and a mile deep. It's also the 15th oldest national park in America, and a UNESCO World Heritage Site."
     },
     {
         "name": "Arkansas",
         "abbreviation": "AR",
         "motto": "Regnat populus",
         "translation" : "The people rule",
-        "image" : "http://static4.businessinsider.com/image/56040aa0bd86ef0f008bcb21-1200/arkansas-in-1957-nine-african-american-students--known-as-the-little-rock-nine--were-not-allowed-to-attend-little-rock-central-high-school-president-dwight-d-eisenhower-ordered-the-101st-airborne-division-to-escort-the-students-to-school-making-little-rock-the-first-public-school-to-implement-desegregation-as-brought-on-by-the-brown-v-board-of-education-decision.jpg"
+        "image" : "http://static4.businessinsider.com/image/56040aa0bd86ef0f008bcb21-1200/arkansas-in-1957-nine-african-american-students--known-as-the-little-rock-nine--were-not-allowed-to-attend-little-rock-central-high-school-president-dwight-d-eisenhower-ordered-the-101st-airborne-division-to-escort-the-students-to-school-making-little-rock-the-first-public-school-to-implement-desegregation-as-brought-on-by-the-brown-v-board-of-education-decision.jpg",
+        "imagetext" : "In 1957, nine African American students — known as the Little Rock Nine — were not allowed to attend Little Rock Central High School. President Dwight D. Eisenhower ordered the 101st Airborne Division to escort the students to school, making Little Rock the first public school to implement desegregation as brought on by the Brown v. Board of Education decision."
     },
     {
         "name": "California",
         "abbreviation": "CA",
         "motto" : "Eureka",
         "translation" : "I have found it",
-        "image" : "http://static6.businessinsider.com/image/56040d809dd7cc21008bcc8b-1200/california-the-golden-gate-bridge-is-considered-one-of-the-most-impressive-construction-achievements-of-the-20th-century-first-opened-in-may-of-1937-the-suspension-bridge-spans-the-three-mile-long-golden-gate-strait-that-stretches-between-san-francisco-bay-and-the-pacific-ocean.jpg"
+        "image" : "http://static6.businessinsider.com/image/56040d809dd7cc21008bcc8b-1200/california-the-golden-gate-bridge-is-considered-one-of-the-most-impressive-construction-achievements-of-the-20th-century-first-opened-in-may-of-1937-the-suspension-bridge-spans-the-three-mile-long-golden-gate-strait-that-stretches-between-san-francisco-bay-and-the-pacific-ocean.jpg",
+        "imagetext" : "The Golden Gate Bridge is considered one of the most impressive construction achievements of the 20th century. First opened in May of 1937, the suspension bridge spans the three-mile-long Golden Gate Strait that stretches between San Francisco Bay and the Pacific Ocean."
     },
     {
         "name": "Colorado",
         "abbreviation": "CO",
         "motto": "Nil sine numine",
         "translation" : "Nothing without Providence",
-        "image" : "http://static1.businessinsider.com/image/5570b3d0ecad0483652f16da-1200/colorado-one-of-the-best-preserved-archaeological-sites-in-the-us-mesa-verde-national-park-offers-a-glimpse-into-how-ancestral-puebloans-lived-in-cave-dwellings-from-550-to-1300-ad-the-park-is-home-to-over-4700-archaeological-sites-and-600-cliff-dwellings-alone.jpg"
+        "image" : "http://static1.businessinsider.com/image/5570b3d0ecad0483652f16da-1200/colorado-one-of-the-best-preserved-archaeological-sites-in-the-us-mesa-verde-national-park-offers-a-glimpse-into-how-ancestral-puebloans-lived-in-cave-dwellings-from-550-to-1300-ad-the-park-is-home-to-over-4700-archaeological-sites-and-600-cliff-dwellings-alone.jpg",
+        "imagetext" : "One of the best preserved archaeological sites in the US, Mesa Verde National Park offers a glimpse into how ancestral Puebloans lived in cave dwellings from 550 to 1300 AD. The park is home to over 4,700 archaeological sites and 600 cliff dwellings alone."
     },
     {
         "name": "Connecticut",
         "abbreviation": "CT",
         "motto": "Qui transtulit sustinet",
         "translation" : "He who transplanted sustains",
-        "image" : "http://static6.businessinsider.com/image/560413b3bd86ef11008bcb3d-1200/connecticut-mystic-seaport-is-the-worlds-largest-maritime-museum-it-boasts-four-national-historic-landmark-vessels-and-has-been-in-operation-for-over-85-years-theres-even-a-19th-century-coastal-village-and-a-working-shipyard.jpg"
+        "image" : "http://static6.businessinsider.com/image/560413b3bd86ef11008bcb3d-1200/connecticut-mystic-seaport-is-the-worlds-largest-maritime-museum-it-boasts-four-national-historic-landmark-vessels-and-has-been-in-operation-for-over-85-years-theres-even-a-19th-century-coastal-village-and-a-working-shipyard.jpg",
+        "imagetext" : "Mystic Seaport is the world's largest maritime museum. It boasts four national historic landmark vessels and has been in operation for over 85 years. There's even a 19th century coastal village and a working shipyard."
     },
     {
         "name": "Delaware",
         "abbreviation": "DE",
         "motto": "",
         "translation" : "Liberty and independence",
-        "image" : "http://static2.businessinsider.com/image/560418459dd7cc25008bcc67-1200/delaware-the-statue-of-caesar-rodney-stands-in-wilmington-delawares-rodney-square-rodney-was-an-american-lawyer-signer-of-the-declaration-of-independence-and-president-of-delaware-during-the-american-revolution-he-is-depicted-riding-a-horse-on-the-1999-delaware-quarter.jpg"
+        "image" : "http://static2.businessinsider.com/image/560418459dd7cc25008bcc67-1200/delaware-the-statue-of-caesar-rodney-stands-in-wilmington-delawares-rodney-square-rodney-was-an-american-lawyer-signer-of-the-declaration-of-independence-and-president-of-delaware-during-the-american-revolution-he-is-depicted-riding-a-horse-on-the-1999-delaware-quarter.jpg",
+        "imagetext" : "The statue of Caesar Rodney stands in Wilmington, Delaware's Rodney Square. Rodney was an American lawyer, signer of the Declaration of Independence, and president of Delaware during the American Revolution. He is depicted riding a horse on the 1999 Delaware quarter."
     },
     {
         "name": "Florida",
         "abbreviation": "FL",
         "motto": "",
         "translation" : "In God we trust",
-        "image" : "http://static2.businessinsider.com/image/56098a829dd7cc1d008bd9b4-1200/florida-walt-disney-built-disney-world-in-orlando-to-be-the-best-theme-park-in-the-world-the-park-took-two-years-and-9000-people-to-build-it-opened-in-1971-and-is-now-home-to-four-parks-within-the-general-park-and-two-water-parks.jpg"
+        "image" : "http://static2.businessinsider.com/image/56098a829dd7cc1d008bd9b4-1200/florida-walt-disney-built-disney-world-in-orlando-to-be-the-best-theme-park-in-the-world-the-park-took-two-years-and-9000-people-to-build-it-opened-in-1971-and-is-now-home-to-four-parks-within-the-general-park-and-two-water-parks.jpg",
+        "imagetext" : "Walt Disney built Disney World in Orlando to be the best theme park in the world. The park took two years and 9,000 people to build; it opened in 1971, and is now home to four parks within the general park, and two water parks."
     },
     {
         "name": "Georgia",
         "abbreviation": "GA",
         "motto": "",
         "translation" : "Wisdom, justice, and moderation",
-        "image" : "http://static1.businessinsider.com/image/56044899bd86ef1d008bcc17-1200/georgia-with-10-million-gallons-of-marine-and-fresh-water-the-georgia-aquarium-in-atlanta-is-the-biggest-aquarium-in-the-western-hemisphere-visitors-can-see-numerous-animals-among-the-thousands-that-are-at-the-aquarium-including-huge-stingrays-in-the-underwater-tunnel.jpg"
+        "image" : "http://static1.businessinsider.com/image/56044899bd86ef1d008bcc17-1200/georgia-with-10-million-gallons-of-marine-and-fresh-water-the-georgia-aquarium-in-atlanta-is-the-biggest-aquarium-in-the-western-hemisphere-visitors-can-see-numerous-animals-among-the-thousands-that-are-at-the-aquarium-including-huge-stingrays-in-the-underwater-tunnel.jpg",
+        "imagetext" : "With 10 million gallons of marine and fresh water, the Georgia Aquarium in Atlanta is the biggest aquarium in the western hemisphere. Visitors can see numerous animals (among the thousands that are at the aquarium), including huge stingrays in the underwater tunnel."
     },
     {
         "name": "Hawaii",
         "abbreviation": "HI",
         "motto": "Ua Mau ke Ea o ka ‘Āina i ka Pono",
         "translation" : "The life of the land is perpetuated in righteousness",
-        "image" : "http://static2.businessinsider.com/image/56044da2bd86ef15008bcc67-1200/hawaii-meant-to-commemorate-1102-of-the-1177-soldiers-and-marines-killed-in-the-attack-on-pearl-harbour-the-uss-arizona-memorial-straddles-the-hull-of-the-battleship-that-was-sunk-in-the-attack-the-memorial-is-on-oahu-island.jpg"
+        "image" : "http://static2.businessinsider.com/image/56044da2bd86ef15008bcc67-1200/hawaii-meant-to-commemorate-1102-of-the-1177-soldiers-and-marines-killed-in-the-attack-on-pearl-harbour-the-uss-arizona-memorial-straddles-the-hull-of-the-battleship-that-was-sunk-in-the-attack-the-memorial-is-on-oahu-island.jpg",
+        "imagetext" : "Meant to commemorate 1,102 of the 1,177 soldiers and marines killed in the attack on Pearl Harbour, the USS Arizona Memorial straddles the hull of the battleship that was sunk in the attack. The memorial is on Oahu island."
     },
     {
         "name": "Idaho",
         "abbreviation": "ID",
         "motto": "Esto perpetua",
         "translation" : "Let it be perpetual",
-        "image" : "http://static2.businessinsider.com/image/56056ae29dd7cc17008bd118-1200/idaho-located-in-idahos-snake-river-plain-craters-of-the-moon-national-monument-and-preserve-is-an-other-worldly-landscape-that-includes-three-lava-fields-and-has-the-deepest-known-open-rift-crack-in-the-world-at-800-feet.jpg"
+        "image" : "http://static2.businessinsider.com/image/56056ae29dd7cc17008bd118-1200/idaho-located-in-idahos-snake-river-plain-craters-of-the-moon-national-monument-and-preserve-is-an-other-worldly-landscape-that-includes-three-lava-fields-and-has-the-deepest-known-open-rift-crack-in-the-world-at-800-feet.jpg",
+        "imagetext" : "Located in Idaho's Snake River Plain, Craters of the Moon National Monument and Preserve is an other-worldly landscape that includes three lava fields and has the deepest known open rift crack in the world at 800 feet."
     },
     {
         "name": "Illinois",
         "abbreviation": "IL",
         "motto": "",
         "translation" : "State sovereignty, national union",
-        "image" : "http://static2.businessinsider.com/image/560451e79dd7cc14008bce85-1200/illinois-although-its-best-known-by-chicagoans-as-the-bean-the-official-name-of-the-sculpture-that-sits-in-chicagos-millennium-park-is-the-cloud-gate-the-110-ton-sculpture-was-created-by-artist-anish-kapoor-and-attracts-tourists-and-locals-alike.jpg"
+        "image" : "http://static2.businessinsider.com/image/560451e79dd7cc14008bce85-1200/illinois-although-its-best-known-by-chicagoans-as-the-bean-the-official-name-of-the-sculpture-that-sits-in-chicagos-millennium-park-is-the-cloud-gate-the-110-ton-sculpture-was-created-by-artist-anish-kapoor-and-attracts-tourists-and-locals-alike.jpg",
+        "imagetext" : "Although it's best known by Chicagoans as the bean, the official name of the sculpture that sits in Chicago's Millennium Park is the Cloud Gate. The 110-ton sculpture was created by artist Anish Kapoor, and attracts tourists and locals alike."
     },
     {
         "name": "Indiana",
         "abbreviation": "IN",
         "motto": "",
         "translation" : "The crossroads of America",
-        "image" : "http://static4.businessinsider.com/image/560453b7bd86ef12008bcdcc-1200/indiana-located-in-speedway-the-indianapolis-motor-speedway-hosts-both-the-indie-500-and-the-brickyard-400-it-first-opened-in-1909-and-today-has-the-highest-capacity-of-any-other-sports-venue-in-the-world--it-can-seat-close-to-260000-people.jpg"
+        "image" : "http://static4.businessinsider.com/image/560453b7bd86ef12008bcdcc-1200/indiana-located-in-speedway-the-indianapolis-motor-speedway-hosts-both-the-indie-500-and-the-brickyard-400-it-first-opened-in-1909-and-today-has-the-highest-capacity-of-any-other-sports-venue-in-the-world--it-can-seat-close-to-260000-people.jpg",
+        "imagetext" : "Located in Speedway, the Indianapolis Motor Speedway hosts both the Indie 500 and the Brickyard 400. It first opened in 1909, and today has the highest capacity of any other sports venue in the world — it can seat close to 260,000 people."
     },
     {
         "name": "Iowa",
         "abbreviation": "IA",
         "motto": "",
         "translation" : "Our liberties we prize and our rights we will maintain",
-        "image" : "http://static2.businessinsider.com/image/52a2278469bedda0585aaef1-1200/iowa-built-for-the-1989-classic-field-of-dreams-the-field-of-dreams-baseball-field-in-dubuque-county-was-split-between-two-different-farms-so-that-the-producers-could-successfully-film-sunset-shots-the-family-owned-farms-have-since-been-consolidated-and-sold-but-people-can-still-visit-and-even-bat-on-the-field.jpg"
+        "image" : "http://static2.businessinsider.com/image/52a2278469bedda0585aaef1-1200/iowa-built-for-the-1989-classic-field-of-dreams-the-field-of-dreams-baseball-field-in-dubuque-county-was-split-between-two-different-farms-so-that-the-producers-could-successfully-film-sunset-shots-the-family-owned-farms-have-since-been-consolidated-and-sold-but-people-can-still-visit-and-even-bat-on-the-field.jpg",
+        "imagetext" : "Built for the 1989 classic “Field of Dreams,” the Field of Dreams baseball field in Dubuque County was split between two different farms, so that the producers could successfully film sunset shots. The family-owned farms have since been consolidated and sold, but people can still visit and even bat on the field."
     },
     {
         "name": "Kansas",
         "abbreviation": "KS",
         "motto": "Ad astra per aspera",
         "translation" : "To the stars through adversity",
-        "image" : "http://static3.businessinsider.com/image/56054b07bd86ef10008bd00d-1200/kansas-established-in-1856-as-a-stop-along-the-santa-fe-trail-dodge-city-served-as-a-safe-haven-for-wagons-traveling-west-and-also-provided-supplies-to-troops-fighting-native-americans-buffalo-hunters-and-traders-eventually-took-over-the-town--which-still-retains-its-wild-west-feel-today--contributing-to-its-lawlessness.jpg"
+        "image" : "http://static3.businessinsider.com/image/56054b07bd86ef10008bd00d-1200/kansas-established-in-1856-as-a-stop-along-the-santa-fe-trail-dodge-city-served-as-a-safe-haven-for-wagons-traveling-west-and-also-provided-supplies-to-troops-fighting-native-americans-buffalo-hunters-and-traders-eventually-took-over-the-town--which-still-retains-its-wild-west-feel-today--contributing-to-its-lawlessness.jpg",
+        "imagetext" : "Established in 1856 as a stop along the Santa Fe Trail, Dodge City served as a safe haven for wagons traveling west, and also provided supplies to troops fighting Native Americans. Buffalo hunters and traders eventually took over the town — which still retains its wild west feel today — contributing to its lawlessness."
     },
     {
         "name": "Kentucky",
         "abbreviation": "KY",
         "motto": "Deo gratiam habeamus",
         "translation" : "Let us give thanks to God",
-        "image" : "http://static4.businessinsider.com/image/553557b969bedd7e758b4567-1200/kentucky-churchill-downs-in-louisville-hosts-the-kentucky-derby-every-year-which-is-the-longest-continually-running-sports-event-in-america-the-racetrack-first-opened-in-1875-and-ever-since-its-been-a-place-to-enjoy-a-mint-julep-and-an-exciting-race.jpg"
+        "image" : "http://static4.businessinsider.com/image/553557b969bedd7e758b4567-1200/kentucky-churchill-downs-in-louisville-hosts-the-kentucky-derby-every-year-which-is-the-longest-continually-running-sports-event-in-america-the-racetrack-first-opened-in-1875-and-ever-since-its-been-a-place-to-enjoy-a-mint-julep-and-an-exciting-race.jpg",
+        "imagetext" : "Churchill Downs in Louisville hosts the Kentucky Derby every year, which is the longest continually running sports event in America. The racetrack first opened in 1875 and ever since it's been a place to enjoy a mint julep and an exciting race."
     },
     {
         "name": "Louisiana",
         "abbreviation": "LA",
         "motto": "",
         "translation" : "Union, justice, and confidence",
-        "image" : "http://static4.businessinsider.com/image/560552af9dd7cc21008bd089-1200/louisiana-dating-back-to-1718-new-orleans-french-quarter-is-the-oldest-neighborhood-in-the-city-and-its-rich-history-is-evident-in-its-colorful-shuttered-buildings-that-feature-balconies-and-plenty-of-flowers-the-neighborhood-also-offers-vibrant-nightlife-its-the-best-place-to-celebrate-mardi-gras.jpg"
+        "image" : "http://static4.businessinsider.com/image/560552af9dd7cc21008bd089-1200/louisiana-dating-back-to-1718-new-orleans-french-quarter-is-the-oldest-neighborhood-in-the-city-and-its-rich-history-is-evident-in-its-colorful-shuttered-buildings-that-feature-balconies-and-plenty-of-flowers-the-neighborhood-also-offers-vibrant-nightlife-its-the-best-place-to-celebrate-mardi-gras.jpg",
+        "imagetext" : "Dating back to 1718, New Orleans' French Quarter is the oldest neighborhood in the city, and its rich history is evident in its colorful shuttered buildings that feature balconies and plenty of flowers. The neighborhood also offers vibrant nightlife; it's the best place to celebrate Mardi Gras."
     },
     {
         "name": "Maine",
         "abbreviation": "ME",
         "motto": "Dirigo",
         "translation" : "I direct",
-        "image" : "http://static2.businessinsider.com/image/56055513bd86ef14008bd042-1200/maine-sitting-along-the-shores-of-fort-williams-park-on-cape-elizabeth-the-portland-head-light-was-first-lit-in-january-of-1791-a-keepers-quarter-was-also-built-next-to-the-lighthouse-today-the-keepers-quarter-houses-a-museum-and-the-lighthouse-is-owned-by-cape-elizabeth.jpg"
+        "image" : "http://static2.businessinsider.com/image/56055513bd86ef14008bd042-1200/maine-sitting-along-the-shores-of-fort-williams-park-on-cape-elizabeth-the-portland-head-light-was-first-lit-in-january-of-1791-a-keepers-quarter-was-also-built-next-to-the-lighthouse-today-the-keepers-quarter-houses-a-museum-and-the-lighthouse-is-owned-by-cape-elizabeth.jpg",
+        "imagetext" : "Sitting along the shores of Fort Williams Park on Cape Elizabeth, the Portland Head Light was first lit in January of 1791. A keeper's quarter was also built next to the lighthouse; today the keeper's quarter houses a museum and the lighthouse is owned by Cape Elizabeth."
     },
     {
         "name": "Maryland",
         "abbreviation": "MD",
         "motto": "Fatti maschi, parole femmine",
         "translation" : "Manly deeds, womanly words",
-        "image" : "http://static4.businessinsider.com/image/56055aaa9dd7cc1c008bd094-1200/maryland-baltimores-star-shaped-fort-mchenry-served-as-the-inspiration-for-francis-scott-key-to-write-the-star-spangled-banner-the-fort-successfully-protected-baltimore-harbor-during-the-attack-of-the-british-navy-in-1814-in-chesapeake-bay.jpg"
+        "image" : "http://static4.businessinsider.com/image/56055aaa9dd7cc1c008bd094-1200/maryland-baltimores-star-shaped-fort-mchenry-served-as-the-inspiration-for-francis-scott-key-to-write-the-star-spangled-banner-the-fort-successfully-protected-baltimore-harbor-during-the-attack-of-the-british-navy-in-1814-in-chesapeake-bay.jpg",
+        "imagetext" : "Baltimore's star-shaped Fort McHenry served as the inspiration for Francis Scott Key to write the “Star Spangled Banner”. The fort successfully protected Baltimore Harbor during the attack of the British Navy in 1814 in Chesapeake Bay."
     },
     {
         "name": "Massachusetts",
         "abbreviation": "MA",
         "motto": "Ense petit placidam sub libertate quietem",
         "translation" : "By the sword we seek peace, but peace only under liberty",
-        "image" : "http://static4.businessinsider.com/image/560560e79dd7cc16008bd019-1200/massachusetts-situated-in-the-heart-of-downtown-boston-boston-common-is-a-public-park-that-dates-back-to-1634-making-it-the-oldest-city-park-in-the-us-the-common-is-close-to-50-acres-in-size-and-serves-as-a-connection-point-for-a-number-of-parks-that-wind-through-bostons-neighborhoods.jpg"
+        "image" : "http://static4.businessinsider.com/image/560560e79dd7cc16008bd019-1200/massachusetts-situated-in-the-heart-of-downtown-boston-boston-common-is-a-public-park-that-dates-back-to-1634-making-it-the-oldest-city-park-in-the-us-the-common-is-close-to-50-acres-in-size-and-serves-as-a-connection-point-for-a-number-of-parks-that-wind-through-bostons-neighborhoods.jpg",
+        "imagetext" : "Situated in the heart of downtown Boston, Boston Common is a public park that dates back to 1634, making it the oldest city park in the US. The Common is close to 50 acres in size and serves as a connection point for a number of parks that wind through Boston’s neighborhoods."
     },
     {
         "name": "Michigan",
         "abbreviation": "MI",
         "motto": "Tuebor",
         "translation" : "I will defend",
-        "image" : "http://static6.businessinsider.com/image/5605613a9dd7cc18008bd0a6-1200/michigan-the-henry-ford-museum-in-dearborn-is-a-12-acre-site-that-houses-an-incredible-collection-of-americana-antique-machinery-automobiles-locomotives-and-other-pop-culture-artifacts.jpg"
+        "image" : "http://static6.businessinsider.com/image/5605613a9dd7cc18008bd0a6-1200/michigan-the-henry-ford-museum-in-dearborn-is-a-12-acre-site-that-houses-an-incredible-collection-of-americana-antique-machinery-automobiles-locomotives-and-other-pop-culture-artifacts.jpg",
+        "imagetext" : "The Henry Ford Museum in Dearborn is a 12-acre site that houses an incredible collection of Americana: antique machinery, automobiles, locomotives, and other pop culture artifacts."
     },
     {
         "name": "Minnesota",
         "abbreviation": "MN",
         "motto": "L'étoile du Nord",
         "translation" : "The star of the North",
-        "image" : "http://static6.businessinsider.com/image/560562b69dd7cc11008bd0c9-1200/minnesota-the-mall-of-america-in-bloomington-is-often-referred-to-as-a-city-within-a-city-its-home-to-over-400-stores-and-attracts-between-35-to-40-million-visitors-per-year.jpg"
+        "image" : "http://static6.businessinsider.com/image/560562b69dd7cc11008bd0c9-1200/minnesota-the-mall-of-america-in-bloomington-is-often-referred-to-as-a-city-within-a-city-its-home-to-over-400-stores-and-attracts-between-35-to-40-million-visitors-per-year.jpg",
+        "imagetext" : "The Mall of America in Bloomington is often referred to as a “city within a city”. It's home to over 400 stores, and attracts between 35 to 40 million visitors per year."
     },
     {
         "name": "Mississippi",
         "abbreviation": "MS",
         "motto": "Virtute et armis",
         "translation" : "By valor and arms",
-        "image" : "http://static5.businessinsider.com/image/560568f69dd7cc19008bd1a1-1200/mississippi-the-site-of-the-american-civil-war-battle-of-vicksburg-in-1863-vicksburg-national-military-park-has-plenty-of-monuments-that-help-to-recreate-the-battle-which-was-crucial-in-weakening-the-confederacys-war-effort.jpg"
+        "image" : "http://static5.businessinsider.com/image/560568f69dd7cc19008bd1a1-1200/mississippi-the-site-of-the-american-civil-war-battle-of-vicksburg-in-1863-vicksburg-national-military-park-has-plenty-of-monuments-that-help-to-recreate-the-battle-which-was-crucial-in-weakening-the-confederacys-war-effort.jpg",
+        "imagetext" : "The site of the American Civil War Battle of Vicksburg in 1863, Vicksburg National Military Park has plenty of monuments that help to recreate the battle, which was crucial in weakening the Confederacy's war effort."
     },
     {
         "name": "Missouri",
         "abbreviation": "MO",
         "motto": "Salus populi suprema lex esto",
         "translation" : "The Welfare of the People is the Highest Law",
-        "image" : "http://static2.businessinsider.com/image/560569329dd7cc21008bd17c-1200/missouri-stretching-630-feet-into-the-air-the-gateway-arch-is-the-tallest-man-made-monument-in-the-us-the-arch-commemorates-americas-westward-expansion-take-the-tram-to-the-top-and-experience-unparalleled-views-of-st-louis-and-the-mississippi-river.jpg"
+        "image" : "http://static2.businessinsider.com/image/560569329dd7cc21008bd17c-1200/missouri-stretching-630-feet-into-the-air-the-gateway-arch-is-the-tallest-man-made-monument-in-the-us-the-arch-commemorates-americas-westward-expansion-take-the-tram-to-the-top-and-experience-unparalleled-views-of-st-louis-and-the-mississippi-river.jpg",
+        "imagetext" : "Stretching 630 feet into the air, the Gateway Arch is the tallest man-made monument in the US. The arch commemorates America's westward expansion. Take the tram to the top and experience unparalleled views of St. Louis and the Mississippi River."
     },
     {
         "name": "Montana",
         "abbreviation": "MT",
         "motto": "Oro y plata",
         "translation" : "Gold and silver",
-        "image" : "http://static4.businessinsider.com/image/560455f19dd7cc0f008bcdc9-1200/montana-the-little-bighorn-battlefield-national-monument-commemorates-the-1876-battle-of-the-little-bighorn-a-deadly-clash-between-the-us-army-and-sioux-and-cheyenne-indians-who-were-trying-to-preserve-their-way-of-life.jpg"
+        "image" : "http://static4.businessinsider.com/image/560455f19dd7cc0f008bcdc9-1200/montana-the-little-bighorn-battlefield-national-monument-commemorates-the-1876-battle-of-the-little-bighorn-a-deadly-clash-between-the-us-army-and-sioux-and-cheyenne-indians-who-were-trying-to-preserve-their-way-of-life.jpg",
+        "imagetext" : "The Little Bighorn Battlefield National Monument commemorates the 1876 Battle of the Little Bighorn, a deadly clash between the US Army and Sioux and Cheyenne Indians who were trying to preserve their way of life."
     },
     {
         "name": "Nebraska",
         "abbreviation": "NE",
         "motto": "",
         "translation" : "Equality before the law",
-        "image" : "http://static6.businessinsider.com/image/560456149dd7cc1d008bce5b-1200/nebraska-chimney-rock--or-elk-penis-according-to-native-americans--is-a-geological-formation-and-designated-national-historic-site-that-served-as-a-landmark-along-the-oregon-trail-the-california-trail-and-the-mormon-trail-during-the-mid-19th-century.jpg"
+        "image" : "http://static6.businessinsider.com/image/560456149dd7cc1d008bce5b-1200/nebraska-chimney-rock--or-elk-penis-according-to-native-americans--is-a-geological-formation-and-designated-national-historic-site-that-served-as-a-landmark-along-the-oregon-trail-the-california-trail-and-the-mormon-trail-during-the-mid-19th-century.jpg",
+        "imagetext" : "Chimney Rock — or Elk Penis according to Native Americans — is a geological formation and designated National Historic site that served as a landmark along the Oregon Trail, the California Trail, and the Mormon Trail during the mid-19th century."
     },
     {
         "name": "Nevada",
         "abbreviation": "NV",
         "motto": "",
         "translation" : "All for our country",
-        "image" : "http://static4.businessinsider.com/image/527c092669bedd6644df1732-1200/nevada-sure-the-hoover-dam-is-cool-but-whats-more-iconically-nevada-than-sin-city-check-out-the-42-mile-las-vegas-strip-home-to-many-of-the-largest-hotels-and-casinos-in-the-country-the-strips-most-famous-sites-include-the-luxor-pyramid-and-sphinx-the-paris-hotel-and-eiffel-tower-and-the-famous-bellagio-fountains.jpg"
+        "image" : "http://static4.businessinsider.com/image/527c092669bedd6644df1732-1200/nevada-sure-the-hoover-dam-is-cool-but-whats-more-iconically-nevada-than-sin-city-check-out-the-42-mile-las-vegas-strip-home-to-many-of-the-largest-hotels-and-casinos-in-the-country-the-strips-most-famous-sites-include-the-luxor-pyramid-and-sphinx-the-paris-hotel-and-eiffel-tower-and-the-famous-bellagio-fountains.jpg",
+        "imagetext" : "Sure, the Hoover Dam is cool, but what's more iconically Nevada than Sin City? Check out the 4.2-mile Las Vegas Strip, home to many of the largest hotels and casinos in the country. The Strip's most famous sites include the Luxor pyramid and sphinx, the Paris Hotel and Eiffel Tower, and the famous Bellagio fountains."
     },
     {
         "name": "New Hampshire",
         "abbreviation": "NH",
         "motto": "",
         "translation" : "Live free or die",
-        "image" : "http://static3.businessinsider.com/image/560457b2bd86ef18008bcefb-1200/new-hampshire-mount-washington-is-the-northeasts-highest-peak-and-famous-for-its-volatile-erratic-weather-take-the-the-mount-washington-cog-railway-to-the-observatory-at-the-top-its-a-coal-fired-steam-powered-locomotive-that-was-built-in-1869-and-the-second-steepest-railway-track-in-the-world.jpg"
+        "image" : "http://static3.businessinsider.com/image/560457b2bd86ef18008bcefb-1200/new-hampshire-mount-washington-is-the-northeasts-highest-peak-and-famous-for-its-volatile-erratic-weather-take-the-the-mount-washington-cog-railway-to-the-observatory-at-the-top-its-a-coal-fired-steam-powered-locomotive-that-was-built-in-1869-and-the-second-steepest-railway-track-in-the-world.jpg",
+        "imagetext" : "Mount Washington is the Northeast's highest peak, and famous for its volatile, erratic weather. Take the the Mount Washington Cog Railway to the observatory at the top: it's a coal-fired, steam-powered locomotive that was built in 1869, and the second steepest railway track in the world."
     },
     {
         "name": "New Jersey",
         "abbreviation": "NJ",
         "motto": "",
         "translation" : "Liberty and prosperity",
-        "image" : "http://static1.businessinsider.com/image/51e06ba26bb3f7df21000003-1200/new-jersey-popularized-by-monopoly-the-gambling-town-of-atlantic-city-was-built-as-a-quaint-seaside-resort-and-boasts-the-countrys-first-boardwalk-the-four-mile-promenade-was-built-in-1870-to-keep-sand-out-of-hotel-lobbies-and-still-features-some-of-the-citys-best-attractions-like-the-entrance-to-the-stars-which-has-celebrity-hand-prints-from-the-likes-of-frank-sinatra.jpg"
+        "image" : "http://static1.businessinsider.com/image/51e06ba26bb3f7df21000003-1200/new-jersey-popularized-by-monopoly-the-gambling-town-of-atlantic-city-was-built-as-a-quaint-seaside-resort-and-boasts-the-countrys-first-boardwalk-the-four-mile-promenade-was-built-in-1870-to-keep-sand-out-of-hotel-lobbies-and-still-features-some-of-the-citys-best-attractions-like-the-entrance-to-the-stars-which-has-celebrity-hand-prints-from-the-likes-of-frank-sinatra.jpg",
+        "imagetext" : "Popularized by Monopoly, the gambling town of Atlantic City was built as a quaint seaside resort, and boasts the country's first boardwalk. The four-mile promenade was built in 1870 to keep sand out of hotel lobbies, and still features some of the city's best attractions, like the Entrance to the Stars, which has celebrity hand prints from the likes of Frank Sinatra."
     },
     {
         "name": "New Mexico",
         "abbreviation": "NM",
         "motto": "Crescit eundo",
         "translation" : "It grows as it goes",
-        "image" : "http://static6.businessinsider.com/image/55354c946da8114d058b4567-1200/new-mexico-the-carlsbad-caverns-with-over-100-caves-is-one-of-the-worlds-largest-collections-of-caves-its-big-room-is-its-largest-natural-limestone-chamber-and-at-almost-4000-feet-in-length-its-the-28th-largest-in-the-world.jpg"
+        "image" : "http://static6.businessinsider.com/image/55354c946da8114d058b4567-1200/new-mexico-the-carlsbad-caverns-with-over-100-caves-is-one-of-the-worlds-largest-collections-of-caves-its-big-room-is-its-largest-natural-limestone-chamber-and-at-almost-4000-feet-in-length-its-the-28th-largest-in-the-world.jpg",
+        "imagetext" : "The Carlsbad Caverns, with over 100 caves, is one of the world's largest collections of caves. Its Big Room is its largest natural limestone chamber, and, at almost 4,000 feet in length, it's the 28th largest in the world."
     },
     {
         "name": "New York",
         "abbreviation": "NY",
         "motto": "Excelsior!",
         "translation" : "Ever Upward!",
-        "image" : "http://static2.businessinsider.com/image/56099a9fbd86ef17008bd8cd-1200/new-york-the-iconic-empire-state-building-features-equally-iconic-views-of-new-york-city.jpg"
+        "image" : "http://static2.businessinsider.com/image/56099a9fbd86ef17008bd8cd-1200/new-york-the-iconic-empire-state-building-features-equally-iconic-views-of-new-york-city.jpg",
+        "imagetext" : "The iconic Empire State building features equally iconic views of New York City."
     },
     {
         "name": "North Carolina",
         "abbreviation": "NC",
         "motto": "Esse quam videri",
         "translation" : "To be, rather than to seem",
-        "image" : "http://static3.businessinsider.com/image/546620266da8118c3613e6eb-1200/north-carolina-the-biltmore-is-one-of-americas-most-famous-estates-and-one-of-the-best-remaining-examples-of-the-gilded-age-a-veritable-american-castle-often-likened-to-americas-versailles-it-was-built-by-george-washington-vanderbilt-between-1889-and-1895-and-is-the-us-largest-privately-owned-house-with-250-rooms-43-alone-are-bathrooms.jpg"
+        "image" : "http://static3.businessinsider.com/image/546620266da8118c3613e6eb-1200/north-carolina-the-biltmore-is-one-of-americas-most-famous-estates-and-one-of-the-best-remaining-examples-of-the-gilded-age-a-veritable-american-castle-often-likened-to-americas-versailles-it-was-built-by-george-washington-vanderbilt-between-1889-and-1895-and-is-the-us-largest-privately-owned-house-with-250-rooms-43-alone-are-bathrooms.jpg",
+        "imagetext" : "The Biltmore is one of America's most famous estates, and one of the best remaining examples of the Gilded Age. A veritable American castle, often likened to America’s Versailles, it was built by George Washington Vanderbilt between 1889 and 1895, and is the US’ largest privately owned house, with 250 rooms (43 alone are bathrooms)."
     },
     {
         "name": "North Dakota",
         "abbreviation": "ND",
         "motto": "",
         "translation" : "Liberty and union, now and forever, one and inseparable / Strength from the soil",
-        "image" : "http://static4.businessinsider.com/image/560459f6bd86ef16008bcefe-1200/north-dakota-theodore-roosevelt-then-not-yet-president-came-to-these-badlands-to-hunt-bison-and-its-said-that-they-inspired-him-to-launch-the-conservation-movement-the-painted-canyon-especially-inside-theodore-roosevelt-national-park-is-a-stunning-array-of-colorful-desert-and-petrified-wood-and-rock-formations.jpg"
+        "image" : "http://static4.businessinsider.com/image/560459f6bd86ef16008bcefe-1200/north-dakota-theodore-roosevelt-then-not-yet-president-came-to-these-badlands-to-hunt-bison-and-its-said-that-they-inspired-him-to-launch-the-conservation-movement-the-painted-canyon-especially-inside-theodore-roosevelt-national-park-is-a-stunning-array-of-colorful-desert-and-petrified-wood-and-rock-formations.jpg",
+        "imagetext" : "Theodore Roosevelt, then not yet president, came to these badlands to hunt Bison, and it's said that they inspired him to launch the conservation movement. The Painted Canyon especially, inside Theodore Roosevelt National Park, is a stunning array of colorful desert and petrified wood and rock formations."
     },
     {
         "name": "Ohio",
         "abbreviation": "OH",
         "motto": "",
         "translation" : "With God, all things are possible",
-        "image" : "http://static3.businessinsider.com/image/56045a0abd86ef1d008bcc83-1200/ohio-from-handwritten-jimi-hendrix-lyrics-to-john-lennons-sgt-pepper-suit-and-a-pair-of-ray-charles-sunglasses-the-rock-and-roll-hall-of-fame-museum-pays-tribute-to-rock-and-rolls-most-legendary-artists-and-producers-in-the-form-of-150000-square-feet-of-memorabilia.jpg"
+        "image" : "http://static3.businessinsider.com/image/56045a0abd86ef1d008bcc83-1200/ohio-from-handwritten-jimi-hendrix-lyrics-to-john-lennons-sgt-pepper-suit-and-a-pair-of-ray-charles-sunglasses-the-rock-and-roll-hall-of-fame-museum-pays-tribute-to-rock-and-rolls-most-legendary-artists-and-producers-in-the-form-of-150000-square-feet-of-memorabilia.jpg",
+        "imagetext" : "From handwritten Jimi Hendrix lyrics to John Lennon's Sgt Pepper suit, and a pair of Ray Charles' sunglasses, the Rock & Roll Hall of Fame Museum pays tribute to rock and roll's most legendary artists and producers in the form of 150,000 square feet of memorabilia."
     },
     {
         "name": "Oklahoma",
         "abbreviation": "OK",
         "motto": "Labor omnia vincit",
         "translation" : "Hard work conquers all things",
-        "image" : "http://static4.businessinsider.com/image/56045ab49dd7cc1d008bce8a-1200/oklahoma-no-road-is-more-iconic-more-quintessentially-american-than-route-66-also-known-as-mother-road-though-it-migrates-west-from-chicago-through-missouri-kansas-oklahoma-texas-new-mexico-and-arizona-before-reaching-california-oklahoma-has-a-longer-stretch-of-the-historic-highway-than-any-other-state-with-around-400-miles.jpg"
+        "image" : "http://static4.businessinsider.com/image/56045ab49dd7cc1d008bce8a-1200/oklahoma-no-road-is-more-iconic-more-quintessentially-american-than-route-66-also-known-as-mother-road-though-it-migrates-west-from-chicago-through-missouri-kansas-oklahoma-texas-new-mexico-and-arizona-before-reaching-california-oklahoma-has-a-longer-stretch-of-the-historic-highway-than-any-other-state-with-around-400-miles.jpg",
+        "imagetext" : "No road is more iconic, more quintessentially American than Route 66, also known as “Mother Road”. Though it migrates West from Chicago through Missouri, Kansas, Oklahoma, Texas, New Mexico, and Arizona before reaching California, Oklahoma has a longer stretch of the historic highway than any other state, with around 400 miles."
     },
     {
         "name": "Oregon",
         "abbreviation": "OR",
         "motto": "Alis volat propriis",
         "translation" : "She flies with her own wings",
-        "image" : "http://static3.businessinsider.com/image/54860d6b6da8114b0f31922b-1200/oregon-aptly-named-crater-lake-was-formed-when-the-caldera-of-the-mount-mazama-volcano-collapsed-at-1943-feet-in-depth-it-is-the-deepest-lake-in-america-since-it-doesnt-feed-any-rivers-fish-were-added-later-and-the-water-replaces-itself-thanks-to-rainfall-and-snow.jpg"
+        "image" : "http://static3.businessinsider.com/image/54860d6b6da8114b0f31922b-1200/oregon-aptly-named-crater-lake-was-formed-when-the-caldera-of-the-mount-mazama-volcano-collapsed-at-1943-feet-in-depth-it-is-the-deepest-lake-in-america-since-it-doesnt-feed-any-rivers-fish-were-added-later-and-the-water-replaces-itself-thanks-to-rainfall-and-snow.jpg",
+        "imagetext" : "Aptly named, Crater Lake was formed when the caldera of the Mount Mazama volcano collapsed. At 1,943 feet in depth it is the deepest lake in America. Since it doesn't feed any rivers, fish were added later, and the water replaces itself thanks to rainfall and snow."
     },
     {
         "name": "Pennsylvania",
         "abbreviation": "PA",
         "motto": "",
         "translation" : "Virtue, liberty, and independence",
-        "image" : "http://static5.businessinsider.com/image/56045ba1bd86ef1b008bcebc-1200/pennsylvania-nothing-says-america-like-freedom-and-nothing-says-freedom-like-philadelphias-liberty-bell-said-to-have-been-rung-during-the-public-reading-of-the-declaration-of-independence-in-1776.jpg"
+        "image" : "http://static5.businessinsider.com/image/56045ba1bd86ef1b008bcebc-1200/pennsylvania-nothing-says-america-like-freedom-and-nothing-says-freedom-like-philadelphias-liberty-bell-said-to-have-been-rung-during-the-public-reading-of-the-declaration-of-independence-in-1776.jpg",
+        "imagetext" : "Nothing says America like freedom, and nothing says freedom like Philadelphia's Liberty Bell, said to have been rung during the public reading of the Declaration of Independence in 1776."
     },
     {
         "name": "Rhode Island",
         "abbreviation": "RI",
         "motto": "",
         "translation" : "Hope",
-        "image" : "http://static3.businessinsider.com/image/53a0967deab8eaa4060bc4fd-1200/rhode-island-back-in-the-gilded-age-americas-wealthiest-families-summered-in-rhode-island-building-themselves-chateaux-like-the-ones-they-saw-in-europe-which-are-now-known-collectively-as-the-newport-mansions-and-include-the-vanderbilts-70-room-breakers-the-marble-house-and-rosecliff.jpg"
+        "image" : "http://static3.businessinsider.com/image/53a0967deab8eaa4060bc4fd-1200/rhode-island-back-in-the-gilded-age-americas-wealthiest-families-summered-in-rhode-island-building-themselves-chateaux-like-the-ones-they-saw-in-europe-which-are-now-known-collectively-as-the-newport-mansions-and-include-the-vanderbilts-70-room-breakers-the-marble-house-and-rosecliff.jpg",
+        "imagetext" : "Back in the Gilded Age America's wealthiest families summered in Rhode Island, building themselves chateaux like the ones they saw in Europe, which are now known collectively as the Newport Mansions, and include the Vanderbilts' 70-room Breakers, the Marble House, and Rosecliff."
     },
     {
         "name": "South Carolina",
         "abbreviation": "SC",
         "motto": "Dum spiro spero",
         "translation" : "While I breathe, I hope",
-        "image" : "http://static6.businessinsider.com/image/5605712ebd86ef11008bd04e-1200/south-carolina-the-first-shots-of-the-civil-war-were-fired-at-fort-sumter-in-the-charleston-harbor-essentially-making-it-the-birthplace-of-the-civil-war.jpg"
+        "image" : "http://static6.businessinsider.com/image/5605712ebd86ef11008bd04e-1200/south-carolina-the-first-shots-of-the-civil-war-were-fired-at-fort-sumter-in-the-charleston-harbor-essentially-making-it-the-birthplace-of-the-civil-war.jpg",
+        "imagetext" : "The first shots of the Civil War were fired at Fort Sumter in the Charleston Harbor, essentially making it the birthplace of the Civil War."
     },
     {
         "name": "South Dakota",
         "abbreviation": "SD",
         "motto": "",
         "translation" : "Under God the people rule",
-        "image" : "http://static2.businessinsider.com/image/5421e21f6bb3f7936af90f0e-1200/south-dakota-mount-rushmore-is-an-american-cultural-icon-featuring-the-60-foot-faces-of-george-washington-thomas-jefferson-theodore-roosevelt-and-abraham-lincoln-carved-into-granite.jpg"
+        "image" : "http://static2.businessinsider.com/image/5421e21f6bb3f7936af90f0e-1200/south-dakota-mount-rushmore-is-an-american-cultural-icon-featuring-the-60-foot-faces-of-george-washington-thomas-jefferson-theodore-roosevelt-and-abraham-lincoln-carved-into-granite.jpg",
+        "imagetext" : "Mount Rushmore is an American cultural icon, featuring the 60-foot faces of George Washington, Thomas Jefferson, Theodore Roosevelt, and Abraham Lincoln carved into granite."
     },
     {
         "name": "Tennessee",
         "abbreviation": "TN",
         "motto": "",
         "translation" : "Agriculture and commerce",
-        "image" : "http://static2.businessinsider.com/image/52a24b846da811e46ea704c4-1200/tennessee-arguably-one-of-americas-most-famous-musicians-and-not-called-the-king-for-nothing-pay-your-respects-at-graceland-elvis-presleys-estate-turned-museum-in-memphis.jpg"
+        "image" : "http://static2.businessinsider.com/image/52a24b846da811e46ea704c4-1200/tennessee-arguably-one-of-americas-most-famous-musicians-and-not-called-the-king-for-nothing-pay-your-respects-at-graceland-elvis-presleys-estate-turned-museum-in-memphis.jpg",
+        "imagetext" : "Arguably one of America's most famous musicians, and not called “The King” for nothing, pay your respects at Graceland, Elvis Presley's estate-turned-museum in Memphis."
     },
     {
         "name": "Texas",
         "abbreviation": "TX",
         "motto": "",
         "translation" : "Friendship",
-        "image" : "http://static5.businessinsider.com/image/51c8a0b56bb3f7e501000024-1200/texas-remember-the-alamo-the-san-antonio-site-plays-a-central-part-in-american-history-as-the-place-of-a-pivotal-battle-in-the-texas-revolution-in-1836-which-launched-folk-heroes-like-davy-crockett-to-fame.jpg"
+        "image" : "http://static5.businessinsider.com/image/51c8a0b56bb3f7e501000024-1200/texas-remember-the-alamo-the-san-antonio-site-plays-a-central-part-in-american-history-as-the-place-of-a-pivotal-battle-in-the-texas-revolution-in-1836-which-launched-folk-heroes-like-davy-crockett-to-fame.jpg",
+        "imagetext" : "Remember the Alamo? The San Antonio site plays a central part in American history as the place of a pivotal battle in the Texas Revolution in 1836, which launched folk heroes like Davy Crockett to fame."
     },
     {
         "name": "Utah",
         "abbreviation": "UT",
         "motto": "",
         "translation" : "Industry",
-        "image" : "http://static3.businessinsider.com/image/56045c94bd86ef1d008bcc96-1200/utah-built-by-brigham-young-founder-of-salt-lake-city-and-second-president-of-the-mormon-church-the-salt-lake-temple-is-the-worlds-largest-mormon-temple.jpg"
+        "image" : "http://static3.businessinsider.com/image/56045c94bd86ef1d008bcc96-1200/utah-built-by-brigham-young-founder-of-salt-lake-city-and-second-president-of-the-mormon-church-the-salt-lake-temple-is-the-worlds-largest-mormon-temple.jpg",
+        "imagetext" : "Built by Brigham Young, founder of Salt Lake City and second president of the Mormon church, the Salt Lake Temple is the world's largest Mormon temple."
     },
     {
         "name": "Vermont",
         "abbreviation": "VT",
         "motto": "",
         "translation" : "Freedom and Unity",
-        "image" : "http://static6.businessinsider.com/image/53cd3d456bb3f7d12258e6de-1200/vermont-despite-being-one-of-the-countrys-smallest-states-its-home-to-an-ice-cream-giant-take-a-30-minute-tour-of-the-ben-and-jerrys-factory-and-grab-some-samples.jpg"
+        "image" : "http://static6.businessinsider.com/image/53cd3d456bb3f7d12258e6de-1200/vermont-despite-being-one-of-the-countrys-smallest-states-its-home-to-an-ice-cream-giant-take-a-30-minute-tour-of-the-ben-and-jerrys-factory-and-grab-some-samples.jpg",
+        "imagetext" : "Despite being one of the country's smallest states, it's home to an ice cream giant. Take a 30-minute tour of the Ben and Jerry's factory, and grab some samples."
     },
     {
         "name" : "Virginia",
         "abbreviation" : "VA",
         "motto" : "Sic semper tyrannis",
         "translation" : "Thus always to tyrants",
-        "image" : "http://static2.businessinsider.com/image/53bff64969bedd6f3f78d752-1200/virginia-virginia-is-a-hotbed-of-history-theres-colonial-williamsburg-george-washingtons-mount-vernon-and-thomas-jeffersons-monticello-but-the-arlington-national-cemetery-attracts-around-three-million-visitors-a-year-there-are-over-1400-graves-here-spread-out-over-600-acres-including-john-f-kennedys-and-the-cemetery-conducts-almost-30-funeral-services-every-weekday.jpg"
+        "image" : "http://static2.businessinsider.com/image/53bff64969bedd6f3f78d752-1200/virginia-virginia-is-a-hotbed-of-history-theres-colonial-williamsburg-george-washingtons-mount-vernon-and-thomas-jeffersons-monticello-but-the-arlington-national-cemetery-attracts-around-three-million-visitors-a-year-there-are-over-1400-graves-here-spread-out-over-600-acres-including-john-f-kennedys-and-the-cemetery-conducts-almost-30-funeral-services-every-weekday.jpg",
+        "imagetext" : "Virginia is a hotbed of history (there's Colonial Williamsburg, George Washington's Mount Vernon, and Thomas Jefferson's Monticello), but the Arlington National Cemetery attracts around three million visitors a year. There are over 14,00 graves here spread out over 600 acres (including John F. Kennedy's), and the cemetery conducts almost 30 funeral services every weekday."
     },
     {
         "name" : "Washington",
         "abbreviation" : "WA",
         "motto" : "Al-ki",
         "translation" : "By and by",
-        "image" : "http://static5.businessinsider.com/image/560575ccbd86ef1d008bcfa3-1200/washington-take-in-seattles-skyline-from-the-space-needles-520-foot-high-observation-deck-or-its-revolving-restaurant-the-605-foot-tall-tower-was-built-for-the-1962-worlds-fair.jpg"
+        "image" : "http://static5.businessinsider.com/image/560575ccbd86ef1d008bcfa3-1200/washington-take-in-seattles-skyline-from-the-space-needles-520-foot-high-observation-deck-or-its-revolving-restaurant-the-605-foot-tall-tower-was-built-for-the-1962-worlds-fair.jpg",
+        "imagetext" : "Take in Seattle's skyline from the Space Needle's 520-foot high observation deck, or its revolving restaurant. The 605-foot tall tower was built for the 1962 World's Fair."
     },
     {
         "name" : "West Virginia",
         "abbreviation" : "WV",
         "motto" : "Montani semper liberi",
         "translation" : "Mountaineers are always free",
-        "image" : "http://static6.businessinsider.com/image/56055c3a9dd7cc1e008bd060-1200/west-virginia-completed-in-1977-the-3030-foot-new-river-gorge-bridge-was-the-worlds-longest-single-span-steel-arch-bridge-for-years-it-is-now-4th-longest-its-also-one-of-the-most-photographed-places-in-west-virginia-and-represents-the-state-on-the-2006-commemorative-quarter-it-also-hosts-bridge-day-when-its-open-to-pedestrians-abseilers-base-jumpers-and-bungee-jumpers-for-a-day.jpg"
+        "image" : "http://static6.businessinsider.com/image/56055c3a9dd7cc1e008bd060-1200/west-virginia-completed-in-1977-the-3030-foot-new-river-gorge-bridge-was-the-worlds-longest-single-span-steel-arch-bridge-for-years-it-is-now-4th-longest-its-also-one-of-the-most-photographed-places-in-west-virginia-and-represents-the-state-on-the-2006-commemorative-quarter-it-also-hosts-bridge-day-when-its-open-to-pedestrians-abseilers-base-jumpers-and-bungee-jumpers-for-a-day.jpg",
+        "imagetext" : "Completed in 1977, the 3,030-foot New River Gorge Bridge was the world's longest single-span steel arch bridge for years (it is now 4th longest). It's also one of the most photographed places in West Virginia, and represents the state on the 2006 commemorative quarter. It also hosts Bridge Day, when it's open to pedestrians, abseilers, BASE jumpers and bungee jumpers for a day."
     },
     {
         "name" : "Wisconsin",
         "abbreviation" : "WI",
         "motto" : "",
         "translation" : "Forward",
-        "image" : "http://static2.businessinsider.com/image/56055cfdbd86ef13008bd05a-1200/wisconsin-visit-taliesin-the-home-of-frank-lloyd-wright-one-of-the-most-famous-american-architects-and-pioneer-of-what-he-called-organic-architecture-in-which-buildings-were-designed-to-harmonize-with-their-environment.jpg"
+        "image" : "http://static2.businessinsider.com/image/56055cfdbd86ef13008bd05a-1200/wisconsin-visit-taliesin-the-home-of-frank-lloyd-wright-one-of-the-most-famous-american-architects-and-pioneer-of-what-he-called-organic-architecture-in-which-buildings-were-designed-to-harmonize-with-their-environment.jpg",
+        "imagetext" : "Visit Taliesin, the home of Frank Lloyd Wright, one of the most famous American architects, and pioneer of what he called “organic architecture,” in which buildings were designed to harmonize with their environment."
     },
     {
         "name" : "Wyoming",
         "abbreviation" : "WY",
         "motto" : "",
         "translation" : "Equal rights",
-        "image" : "http://static4.businessinsider.com/image/558046aeecad048a16bc01ac-1200/wyoming-yellowstone-national-park-americas-first-national-park-attracts-over-three-million-visitors-annually-with-its-3500-square-miles-of-wilderness-geothermal-phenomena-and-wildlife-most-of-the-park-sits-on-top-of-a-slumbering-volcano-and-it-boasts-more-geysers-and-hot-springs--including-the-famous-old-faithful--than-any-other-place-on-earth-dont-miss-checking-out-the-incredible-morning-glory-pool.jpg"
+        "image" : "http://static4.businessinsider.com/image/558046aeecad048a16bc01ac-1200/wyoming-yellowstone-national-park-americas-first-national-park-attracts-over-three-million-visitors-annually-with-its-3500-square-miles-of-wilderness-geothermal-phenomena-and-wildlife-most-of-the-park-sits-on-top-of-a-slumbering-volcano-and-it-boasts-more-geysers-and-hot-springs--including-the-famous-old-faithful--than-any-other-place-on-earth-dont-miss-checking-out-the-incredible-morning-glory-pool.jpg",
+        "imagetext" : "Yellowstone National Park, America's first national park, attracts over three million visitors annually with its 3,500 square miles of wilderness, geothermal phenomena, and wildlife. Most of the park sits on top of a slumbering volcano, and it boasts more geysers and hot springs — including the famous Old Faithful — than any other place on earth. Don't miss checking out the incredible Morning Glory Pool."
     }
 ]

@@ -42,7 +42,8 @@ app.controller("detailController", ['$scope', '$location', 'getStates', 'getStat
             $scope.stateImage = $scope.states[x].image;
 						$scope.stateFullName = $scope.states[x].name;
 						// the file name contains the text description so format text for readability (remove path and extension, replace hyphens with spaces)
-						$scope.stateImageText = $scope.stateImage.replace(/^.*[\\\/]/, '').replace(/-/g, ' ').replace('.jpg','').toUpperCase().replace($scope.stateFullName.toUpperCase(), "");
+						//$scope.stateImageText = $scope.stateImage.replace(/^.*[\\\/]/, '').replace(/-/g, ' ').replace('.jpg','').toUpperCase().replace($scope.stateFullName.toUpperCase(), "");
+						$scope.stateImageText = $scope.states[x].imagetext;
 
           }
         }
