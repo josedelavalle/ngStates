@@ -1,0 +1,22 @@
+<div ng-include="'partials/header.html'"></div>
+
+<!-- <div ng-include="'partials/menu.html'"></div> -->
+
+<!-- Main -->
+  <div id="main">
+    <div class="inner">
+      <h1>{{stateFullName}}</h1>
+      <b>{{stateImageText}}</b>
+      <span class="image main"><img src="{{stateImage}}" alt="{{stateFullName}}" onerror="if (this.src != 'error.jpg') this.src = 'images/pic13.jpg';"/></span>
+
+        <div class="row">
+          <div class="6u" ng-repeat="detail in stateDetails">
+            <h2>
+              <a href="{{detail.url}}">{{detail.name}}</a>
+            </h2>
+            <p>latitude: {{detail.primary_latitude}}, longitude: {{detail.primary_longitude}}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
