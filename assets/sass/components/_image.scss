@@ -4,6 +4,16 @@
 /// License: pixelarity.com/license
 ///
 
+
+.imageContainer {
+	height: 400px;
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	margin-bottom: 50px;
+}
+
 /* Image */
 
 	.image {

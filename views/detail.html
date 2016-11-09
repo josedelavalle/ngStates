@@ -14,8 +14,9 @@
         <input type="text" ng-model="search" placeholder="filter me">
         <br />
         <div class="row counties">
-          <div class="4u 6u(medium) 12u(small)" ng-repeat="detail in stateDetails | filter:{ name: search }">
+          <div class="4u 6u(medium) 12u(small)" ng-repeat="detail in stateDetails | filter:{ name: search } | orderBy:name:false">
             <h2>
+              <a href="{{detail.url}}" class="icon style1 {{icons[$index % icons.length]}}"></a>
               <a href="{{detail.url}}">{{detail.name}}</a>
             </h2>
             <p>latitude: {{detail.primary_latitude}}, longitude: {{detail.primary_longitude}}</p>

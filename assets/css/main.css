@@ -1772,6 +1772,14 @@ input[type="radio"] + label:before {
     border-radius: 0;
     padding: 0; }
 
+.imageContainer {
+  height: 400px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-bottom: 50px; }
+
 /* Image */
 .image {
   border-radius: 5px;
@@ -2401,14 +2409,6 @@ body.is-menu-visible #menu {
 .counties {
   display: flex;
   flex-wrap: wrap; }
-
-.imageContainer {
-  height: 400px;
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  margin-bottom: 50px; }
 
 /* Footer */
 #footer {

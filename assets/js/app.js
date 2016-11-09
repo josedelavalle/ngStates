@@ -18,7 +18,6 @@ app.config(['$routeProvider', '$locationProvider', function($routeProvider, $loc
 }]);
 app.controller("appController", ['$scope', 'getStates', function($scope, getStates) {
 
-  //$scope.states = ["Alabama", "Alaska", "Arizona", "Arkansas", "five", "six", "seven", "eight", "nine", "ten", "eleven", "twelve"];
 	$scope.headerTitle = "Jose DeLavalle";
   getStates.get().then(function (msg) {
 
@@ -28,10 +27,10 @@ app.controller("appController", ['$scope', 'getStates', function($scope, getStat
 }]);
 
 app.controller("detailController", ['$scope', '$location', 'getStates', 'getStateData', function($scope, $location, getStates, getStateData) {
-	$scope.headerTitle = "Go Back";
-  //$scope.states = ["Alabama", "Alaska", "Arizona", "Arkansas", "five", "six", "seven", "eight", "nine", "ten", "eleven", "twelve"];
-  $scope.thisState = $location.search().s;
 
+	$scope.headerTitle = "Go Back";
+  $scope.thisState = $location.search().s;
+	$scope.icons = ["fa-globe","fa-map","fa-flag","fa-map-marker","fa-road"];
   getStates.get().then(function (msg) {
 
         $scope.states = msg.data;
@@ -56,27 +55,13 @@ app.controller("detailController", ['$scope', '$location', 'getStates', 'getStat
         $scope.stateDetails = msg.data;
         console.log($scope.stateDetails);
     });
-
-
-  // getImages.get().then(function (msg) {
-  //
-  //       $scope.details = msg.data;
-  //       console.log($scope.details);
-  //   });
 }]);
+
 app.factory('getStates', function ($http) {
     return {
         get: function () {
             console.log("inside function");
             return $http.get('./assets/states.json');
-        }
-    };
-});
-app.factory('getImages', function ($http) {
-    return {
-        get: function () {
-            console.log("inside function");
-            return $http.get('https://en.wikipedia.org/w/api.php?action=opensearch&limit=5&format=json&search=italy&namespace=0');
         }
     };
 });
