@@ -68,7 +68,15 @@
 			}
 
 			@include breakpoint(small) {
+
 				margin: 0 0 _size(element-margin) 0;
+				.imageContainer {
+					height: 400px;
+					background-position: center;
+					background-attachment: scroll;
+					background-size:contain;
+					margin-bottom: 50px;
+				}
 			}
 		}
 	}

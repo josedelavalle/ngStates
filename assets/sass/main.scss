@@ -6,11 +6,6 @@
 @import 'font-awesome.min.css';
 @import url('http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,700,900');
 
-/*
-	Phantom by Pixelarity
-	pixelarity.com @pixelarity
-	License: pixelarity.com/license
-*/
 
 	@include skel-breakpoints((
 		xlarge: '(max-width: 1680px)',
@@ -41,6 +36,9 @@
 		)
 	));
 
+	.counties {
+		text-align: center;
+	}
 // Base.
 
 	@import 'base/page';

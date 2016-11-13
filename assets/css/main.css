@@ -70,11 +70,6 @@
   animation: slideOutLeft 0.3s both ease-in-out;
   z-index: 8889; }
 
-/*
-	Phantom by Pixelarity
-	pixelarity.com @pixelarity
-	License: pixelarity.com/license
-*/
 /* Reset */
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
   margin: 0;
@@ -1275,6 +1270,9 @@ body {
 {
     margin-left: 8.3333333333%; } }
 
+.counties {
+  text-align: center; }
+
 /* Basic */
 @-ms-viewport {
   width: device-width; }
@@ -1757,6 +1755,9 @@ input[type="checkbox"] + label:before {
 input[type="radio"] + label:before {
   border-radius: 100%; }
 
+.counties {
+  text-align: center; }
+
 /* Box */
 .box {
   border-radius: 5px;
@@ -1815,7 +1816,13 @@ input[type="radio"] + label:before {
       width: 100%; }
     @media screen and (max-width: 736px) {
       .image.main {
-        margin: 0 0 2em 0; } }
+        margin: 0 0 2em 0; }
+        .image.main .imageContainer {
+          height: 400px;
+          background-position: center;
+          background-attachment: scroll;
+          background-size: contain;
+          margin-bottom: 50px; } }
 
 /* Table */
 .table-wrapper {

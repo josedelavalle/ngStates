@@ -61,7 +61,7 @@ app.factory('getStates', function ($http) {
     return {
         get: function () {
             console.log("inside function");
-            return $http.get('./assets/states.json');
+            return $http.get('./assets/json/states.json');
         }
     };
 });
@@ -69,8 +69,7 @@ app.factory('getStates', function ($http) {
 app.factory('getStateData', function ($http) {
     return {
         get: function (thisState) {
-            console.log("inside function");
-            return $http.get('http://api.sba.gov/geodata/county_links_for_state_of/' + thisState + '.json');
+            return $http.get('./assets/json/' + thisState + '.json');
         }
     };
 });
