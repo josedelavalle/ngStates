@@ -5,7 +5,18 @@
 <!-- Main -->
   <div id="main">
     <div class="inner">
-      <h1>{{stateFullName}}</h1>
+      <div class="row counties">
+        <div class="4u">
+          <h1 class="icon fa-chevron-left" ng-click="goBack()"></h1>
+        </div>
+        <div class="4u">
+          <h1>{{stateFullName}}</h1>
+        </div>
+        <div class="4u">
+          <h1 class="icon fa-chevron-right" ng-click="goForward()"></h1>
+        </div>
+      </div>
+
       <b>{{stateImageText}}</b>
       <span class="image main">
         <div class="imageContainer" style="background-image: url('{{stateImage}}');">

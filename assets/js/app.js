@@ -30,31 +30,54 @@ app.controller("detailController", ['$scope', '$location', 'getStates', 'getStat
 
 	$scope.headerTitle = "Go Back";
   $scope.thisState = $location.search().s;
+
 	$scope.icons = ["fa-globe","fa-map","fa-flag","fa-map-marker","fa-road"];
-  getStates.get().then(function (msg) {
+	switchState = function () {
+		x = $scope.thisState;
+		getStates.get().then(function (msg) {
 
-        $scope.states = msg.data;
-        console.log($scope.states);
-        for (x = 0; x < $scope.states.length; x++) {
-          if($scope.thisState == $scope.states[x].abbreviation) {
-            console.log("here - " + $scope.states[x].abbreviation)
-            $scope.stateImage = $scope.states[x].image;
-						$scope.stateFullName = $scope.states[x].name;
-						// the file name contains the text description so format text for readability (remove path and extension, replace hyphens with spaces)
-						//$scope.stateImageText = $scope.stateImage.replace(/^.*[\\\/]/, '').replace(/-/g, ' ').replace('.jpg','').toUpperCase().replace($scope.stateFullName.toUpperCase(), "");
-						$scope.stateImageText = $scope.states[x].imagetext;
+	    $scope.states = msg.data;
 
-          }
-        }
-    });
 
-  $scope.thisState = $location.search().s;
 
-  getStateData.get($scope.thisState).then(function (msg) {
+	    $scope.stateImage = $scope.states[x].image;
+			$scope.stateFullName = $scope.states[x].name;
+			// the file name contains the text description so format text for readability (remove path and extension, replace hyphens with spaces)
+			//$scope.stateImageText = $scope.stateImage.replace(/^.*[\\\/]/, '').replace(/-/g, ' ').replace('.jpg','').toUpperCase().replace($scope.stateFullName.toUpperCase(), "");
+			$scope.stateImageText = $scope.states[x].imagetext;
 
-        $scope.stateDetails = msg.data;
-        console.log($scope.stateDetails);
-    });
+
+		});
+  };
+	$scope.goForward = function() {
+		if($scope.thisState == $scope.states.length - 1) {
+			$scope.thisState = 0;
+		} else {
+			$scope.thisState++;
+		}
+		$scope.thisAbbreviation = $scope.states[$scope.thisState].abbreviation;
+		goGetStateData();
+
+	};
+	$scope.goBack = function() {
+		if($scope.thisState == 0) {
+			$scope.thisState = $scope.states.length - 1;
+		} else {
+			$scope.thisState--;
+		}
+		$scope.thisAbbreviation = $scope.states[$scope.thisState].abbreviation;
+		goGetStateData();
+	};
+  //$scope.thisState = $location.search().s;
+	goGetStateData = function() {
+		switchState();
+	  getStateData.get($scope.thisAbbreviation).then(function (msg) {
+
+	        $scope.stateDetails = msg.data;
+	        console.log($scope.stateDetails);
+	    });
+	};
+	goGetStateData();
 }]);
 
 app.factory('getStates', function ($http) {
