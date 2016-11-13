@@ -5,19 +5,20 @@
 <!-- Main -->
   <div id="main">
     <div class="inner">
+
       <div class="row counties">
         <div class="4u">
           <h1 class="icon fa-chevron-left" ng-click="goBack()"></h1>
         </div>
         <div class="4u">
-          <h1>{{stateFullName}}</h1>
+          <h1 animate-on-change='stateFullName'>{{stateFullName}}</h1>
         </div>
         <div class="4u">
           <h1 class="icon fa-chevron-right" ng-click="goForward()"></h1>
         </div>
       </div>
 
-      <b>{{stateImageText}}</b>
+      <b animate-on-change='stateImageText'>{{stateImageText}}</b>
       <span class="image main">
         <div class="imageContainer" style="background-image: url('{{stateImage}}');">
           <!-- <img src="{{stateImage}}" alt="{{stateFullName}}" onerror="if (this.src != 'error.jpg') this.src = 'images/pic13.jpg';"/></span> -->

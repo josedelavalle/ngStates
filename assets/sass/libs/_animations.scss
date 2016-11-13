@@ -51,3 +51,14 @@
   .ng-enter          { animation: slideInRight 0.6s both ease-in-out; z-index: 8889; }
   .ng-leave           { animation: slideOutLeft 0.3s both ease-in-out; z-index: 8889; }
 }
+
+[animate-on-change] {
+  opacity: 1;
+  transition: all 0.5s ease-in-out;
+  -webkit-transition: opacity 0.5s ease-in-out;
+}
+[animate-on-change].changed {
+    opacity: 0;
+    transition: none;
+    -webkit-transition: opacity none;
+}

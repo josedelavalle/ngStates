@@ -29,16 +29,16 @@ app.controller("appController", ['$scope', 'getStates', function($scope, getStat
 app.controller("detailController", ['$scope', '$location', 'getStates', 'getStateData', function($scope, $location, getStates, getStateData) {
 
 	$scope.headerTitle = "Go Back";
-  $scope.thisState = $location.search().s;
+  thisState = $location.search().s;
 
 	$scope.icons = ["fa-globe","fa-map","fa-flag","fa-map-marker","fa-road"];
 	switchState = function () {
-		x = $scope.thisState;
+		x = thisState;
 		getStates.get().then(function (msg) {
 
 	    $scope.states = msg.data;
-
-
+			thisAbbreviation = $scope.states[thisState].abbreviation;
+			console.log(thisAbbreviation);
 
 	    $scope.stateImage = $scope.states[x].image;
 			$scope.stateFullName = $scope.states[x].name;
@@ -46,44 +46,45 @@ app.controller("detailController", ['$scope', '$location', 'getStates', 'getStat
 			//$scope.stateImageText = $scope.stateImage.replace(/^.*[\\\/]/, '').replace(/-/g, ' ').replace('.jpg','').toUpperCase().replace($scope.stateFullName.toUpperCase(), "");
 			$scope.stateImageText = $scope.states[x].imagetext;
 
-
+			goGetStateData();
 		});
+
   };
 	$scope.goForward = function() {
-		if($scope.thisState == $scope.states.length - 1) {
-			$scope.thisState = 0;
+		if(thisState == $scope.states.length - 1) {
+			thisState = 0;
 		} else {
-			$scope.thisState++;
+			thisState++;
 		}
-		$scope.thisAbbreviation = $scope.states[$scope.thisState].abbreviation;
-		goGetStateData();
+		thisAbbreviation = $scope.states[thisState].abbreviation;
+		switchState();
 
 	};
 	$scope.goBack = function() {
-		if($scope.thisState == 0) {
-			$scope.thisState = $scope.states.length - 1;
+		if(thisState == 0) {
+			thisState = $scope.states.length - 1;
 		} else {
-			$scope.thisState--;
+			thisState--;
 		}
-		$scope.thisAbbreviation = $scope.states[$scope.thisState].abbreviation;
-		goGetStateData();
-	};
-  //$scope.thisState = $location.search().s;
-	goGetStateData = function() {
+		thisAbbreviation = $scope.states[thisState].abbreviation;
 		switchState();
-	  getStateData.get($scope.thisAbbreviation).then(function (msg) {
+	};
+
+	goGetStateData = function() {
+
+	  getStateData.get(thisAbbreviation).then(function (msg) {
 
 	        $scope.stateDetails = msg.data;
-	        console.log($scope.stateDetails);
+
 	    });
 	};
-	goGetStateData();
+	switchState();
 }]);
 
 app.factory('getStates', function ($http) {
     return {
         get: function () {
-            console.log("inside function");
+
             return $http.get('./assets/json/states.json');
         }
     };
@@ -94,5 +95,18 @@ app.factory('getStateData', function ($http) {
         get: function (thisState) {
             return $http.get('./assets/json/' + thisState + '.json');
         }
+    };
+});
+
+app.directive('animateOnChange', function($timeout) {
+    return function(scope, element, attr) {
+        scope.$watch(attr.animateOnChange, function(nv,ov) {
+            if (nv!=ov) {
+                element.addClass('changed');
+                $timeout(function() {
+                    element.removeClass('changed');
+                }, 250);
+            }
+        });
     };
 });
