@@ -35,6 +35,7 @@ app.controller("detailController", ['$scope', '$location', '$filter', 'getStates
 
 	switchState = function () {
 		x = thisState;
+		$scope.imagery = [];
 		getStates.get().then(function (msg) {
 
 	    $scope.states = msg.data;
