@@ -1946,6 +1946,12 @@ button,
   button.big,
   .button.big {
     font-size: 1em; }
+  input[type="submit"].pinned,
+  input[type="reset"].pinned,
+  input[type="button"].pinned,
+  button.pinned,
+  .button.pinned {
+    bottom: 0; }
   input[type="submit"].special,
   input[type="reset"].special,
   input[type="button"].special,

@@ -65,7 +65,9 @@
 		&.big {
 			font-size: 1em;
 		}
-
+		&.pinned {
+			bottom: 0;
+		}
 		&.special {
 			box-shadow: none;
 			background-color: _palette(fg);
@@ -78,6 +80,7 @@
 			&:active {
 				background-color: darken(_palette(accent1), 8);
 			}
+
 		}
 
 		&.disabled,
