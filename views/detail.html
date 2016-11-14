@@ -32,10 +32,10 @@
               <a href="{{detail.url}}">{{detail.name}}</a>
             </h2>
             <p>latitude: {{detail.primary_latitude}}, longitude: {{detail.primary_longitude}}</p>
-            <div class="button big pinned" ng-click="getLocation(detail.primary_latitude, detail.primary_longitude, $index)">
+            <div class="button big pinned" ng-click="getLocation(detail.primary_latitude, detail.primary_longitude, detail.name)">
               Get Map
             </div>
-            <img class="image" ng-src="{{imagery[$index]}}" />
+            <img class="image" ng-src="{{imagery[detail.name]}}" />
             <hr />
           </div>
         </div>

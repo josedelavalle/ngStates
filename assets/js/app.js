@@ -27,7 +27,7 @@ app.controller("appController", ['$scope', 'getStates', function($scope, getStat
 }]);
 
 app.controller("detailController", ['$scope', '$location', '$filter', 'getStates', 'getStateData', 'getImagery', function($scope, $location, $filter, getStates, getStateData, getImagery) {
-	$scope.imagery = [];
+	$scope.imagery = {};
 	$scope.headerTitle = "Go Back";
   thisState = $location.search().s;
 
@@ -35,7 +35,7 @@ app.controller("detailController", ['$scope', '$location', '$filter', 'getStates
 
 	switchState = function () {
 		x = thisState;
-		$scope.imagery = [];
+		$scope.imagery = {};
 		getStates.get().then(function (msg) {
 
 	    $scope.states = msg.data;
@@ -87,7 +87,10 @@ app.controller("detailController", ['$scope', '$location', '$filter', 'getStates
 	}
 
 	$scope.getLocation = function(lat, lon, ndx) {
-		$scope.imagery[ndx] = "https://maps.googleapis.com/maps/api/staticmap?center="+lat+","+lon+"&zoom=11&size=400x400&key=AIzaSyBy34i8mK7IXxcAqmZfOEX70XZtNEt7D7s";
+
+		url = "https://maps.googleapis.com/maps/api/staticmap?center="+lat+","+lon+"&zoom=11&size=400x400&key=AIzaSyBy34i8mK7IXxcAqmZfOEX70XZtNEt7D7s";
+		$scope.imagery[ndx] = url;
+		console.log($scope.imagery);
 	};
 }]);
 
