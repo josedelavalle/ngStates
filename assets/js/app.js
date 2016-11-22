@@ -77,7 +77,12 @@ app.controller("detailController", ['$scope', '$location', '$filter', 'getStates
 	  getStateData.get(thisAbbreviation).then(function (msg) {
 
 	        $scope.stateDetails = msg.data;
-
+	        for (var x=0; x < $scope.stateDetails.length; x++) {
+	        	$scope.stateDetails[x].clicked = false;
+	        	$scope.stateDetails[x].showRemove = false;
+	        	$scope.stateDetails[x].removed = false;
+	        };
+	        console.log($scope.stateDetails);
 	    });
 	};
 	switchState();
@@ -85,12 +90,31 @@ app.controller("detailController", ['$scope', '$location', '$filter', 'getStates
 		return $filter('date')(thisdate,'yyyy-MM-dd');
 
 	}
+	$scope.removeMap = function(i) {
+		
+		$scope.stateDetails[i].showRemove = false;
+
+		$scope.stateDetails[i].removed = true;
+		$scope.stateDetails[i].url = null;
+		$scope.$apply;
+	}
+	$scope.getAllLocations = function() {
+		setTimeout(function() {
+    		$('.pinned').click(); // tigger('click')
+		}, 3000);
+		for (var x=0; x < $scope.stateDetails.length; x++) {
+			$scope.stateDetails[x].showRemove=true;
+			$scope.stateDetails[x].removed=false;
+		}
+	};
 
 	$scope.getLocation = function(lat, lon, ndx) {
 
 		url = "https://maps.googleapis.com/maps/api/staticmap?center="+lat+","+lon+"&zoom=11&size=400x400&key=AIzaSyBy34i8mK7IXxcAqmZfOEX70XZtNEt7D7s";
 		$scope.imagery[ndx] = url;
-		console.log($scope.imagery);
+
+		//console.log($scope.imagery);
+
 	};
 }]);
 
@@ -115,7 +139,7 @@ app.factory('getImagery', function ($http) {
     return {
         get: function (lat, lon, thisDate) {
 						//var thisURL = 'https://api.nasa.gov/planetary/earth/imagery?lon=' + lon + '&lat=' + lat + '&date=' + thisDate + '&cloud_score=True&api_key=sFBD6hSaJ9HBP6U8qhXaBv6v9pKcTYtICStGJlOA';
-						var thisURL = "https://maps.googleapis.com/maps/api/staticmap?lon=58.76&lon=-156.83&zoom=13&size=600x300&maptype=roadmap&key=AIzaSyBy34i8mK7IXxcAqmZfOEX70XZtNEt7D7s";
+						// var thisURL = "https://maps.googleapis.com/maps/api/staticmap?lon=58.76&lon=-156.83&zoom=13&size=600x300&maptype=roadmap&key=AIzaSyBy34i8mK7IXxcAqmZfOEX70XZtNEt7D7s";
 						var thisURL = "https://maps.googleapis.com/maps/api/streetview?size=600x300&location=46.414382,10.013988&heading=151.78&pitch=-0.76&key=AIzaSyBy34i8mK7IXxcAqmZfOEX70XZtNEt7D7s"
 						console.log(thisURL);
             return $http.get(thisURL);
