@@ -34,7 +34,7 @@
             <p>latitude: {{detail.primary_latitude}}, longitude: {{detail.primary_longitude}}</p>
             <div class="button big"">
               <div class="pinned" ng-if="!detail.clicked" ng-click="getLocation(detail.primary_latitude, detail.primary_longitude, detail.name);detail.clicked=true;">Get Map</div>
-              <div ng-if="detail.clicked&&!detail.showRemove" ng-click="getAllLocations();">Get All</div>
+              <div ng-if="detail.clicked&&!detail.showRemove" ng-click="detail.showRemove=true;getAllLocations();">Get All</div>
               <div ng-if="detail.showRemove" ng-click="detail.removed=true;detail.showRemove=false;">Remove</div>
             </div>
             <img class="image" ng-if="!detail.removed" ng-src="{{imagery[detail.name]}}" />

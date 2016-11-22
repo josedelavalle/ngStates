@@ -99,13 +99,14 @@ app.controller("detailController", ['$scope', '$location', '$filter', 'getStates
 		$scope.$apply;
 	}
 	$scope.getAllLocations = function() {
-		setTimeout(function() {
-    		$('.pinned').click(); // tigger('click')
-		}, 3000);
 		for (var x=0; x < $scope.stateDetails.length; x++) {
 			$scope.stateDetails[x].showRemove=true;
 			$scope.stateDetails[x].removed=false;
 		}
+		setTimeout(function() {
+    		$('.pinned').click(); // tigger('click')
+		}, 3000);
+		
 	};
 
 	$scope.getLocation = function(lat, lon, ndx) {
