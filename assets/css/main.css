@@ -1933,7 +1933,8 @@ button,
   input[type="button"]:active,
   button:active,
   .button:active {
-    background-color: rgba(242, 132, 158, 0.1); }
+    background-color: rgba(242, 132, 158, 0.1);
+    border: none; }
   input[type="submit"].small,
   input[type="reset"].small,
   input[type="button"].small,
@@ -1952,6 +1953,12 @@ button,
   button.pinned,
   .button.pinned {
     bottom: 0; }
+    input[type="submit"].pinned:active,
+    input[type="reset"].pinned:active,
+    input[type="button"].pinned:active,
+    button.pinned:active,
+    .button.pinned:active {
+      border: none !important; }
   input[type="submit"].special,
   input[type="reset"].special,
   input[type="button"].special,

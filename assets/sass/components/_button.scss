@@ -56,6 +56,7 @@
 
 		&:active {
 			background-color: transparentize(_palette(accent1), 0.9);
+			border: none;
 		}
 
 		&.small {
@@ -67,6 +68,10 @@
 		}
 		&.pinned {
 			bottom: 0;
+			&:active {
+				border: none !important;
+			}
+			
 		}
 		&.special {
 			box-shadow: none;

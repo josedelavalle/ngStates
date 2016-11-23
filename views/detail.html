@@ -28,17 +28,22 @@
         <div class="row counties">
           <div class="4u 6u(medium) 12u(small)" ng-repeat="detail in stateDetails | filter:{ name: search } | orderBy:name:false">
             <h2>
-              <a href="{{detail.url}}" class="icon style1 {{icons[$index % icons.length]}}"></a>
-              <a href="{{detail.url}}">{{detail.name}}</a>
+              <a target="_blank" href="{{detail.url}}" class="icon style1 {{icons[$index % icons.length]}}"></a>
+              <a target="_blank" href="{{detail.url}}">{{detail.name}}</a>
             </h2>
             <p>latitude: {{detail.primary_latitude}}, longitude: {{detail.primary_longitude}}</p>
             <div class="button big"">
               <div class="pinned" ng-if="!detail.clicked" ng-click="getLocation(detail.primary_latitude, detail.primary_longitude, detail.name);detail.clicked=true;">Get Map</div>
               <div ng-if="detail.clicked&&!detail.showRemove" ng-click="getAllLocations();">Get All</div>
               <div ng-if="detail.showRemove" ng-click="detail.removed=true;detail.showRemove=false;">Remove</div>
-            </div><a href="{{detail.url}}">
+
+            </div>
+            
+            
+
+            <a target="_blank" href="{{detail.url}}">
                   <img class="image" ng-if="!detail.removed" ng-src="{{imagery[detail.name]}}" />
-                  </a>
+            </a>
             <hr />
           </div>
         </div>
