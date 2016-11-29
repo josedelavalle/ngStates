@@ -1,35 +1,52 @@
-<div ng-include="'partials/header.html'"></div>
+
 
 <!-- <div ng-include="'partials/menu.html'"></div> -->
 
 <!-- Main -->
   <div id="main">
     <div class="inner">
-
-      <div class="row counties">
-        <div class="4u">
-          <h1 class="icon fa-chevron-left" ng-click="goBack()"></h1>
+      <div class="stateHeader">
+      <div ng-include="'partials/header.html'"></div>
+        
+        <div id="stateHeader" class="row counties">
+          <div class="4u">
+            <a href="/1?s={{prevState}}">
+              <h1 class="icon fa-chevron-left"></h1>
+            </a>
+          </div>
+          <div class="4u">
+            <h1 animate-on-change='stateFullName'>{{stateFullName}}</h1>
+            <input type="text" ng-model="search" placeholder="filter counties">
+          </div>
+          <div class="4u">
+            <a href="/1?s={{nextState}}">
+              <h1 class="icon fa-chevron-right"></h1>
+            </a>
+          </div>
+        
         </div>
-        <div class="4u">
-          <h1 animate-on-change='stateFullName'>{{stateFullName}}</h1>
-        </div>
-        <div class="4u">
-          <h1 class="icon fa-chevron-right" ng-click="goForward()"></h1>
-        </div>
+        
       </div>
-
-      <b animate-on-change='stateImageText'>{{stateImageText}}</b>
-      <span class="image main">
-        <div class="imageContainer" style="background-image: url('{{stateImage}}');">
+      <div id="thisImage" class="image main">
+        <div id="imageContainer" class="imageContainer" style="background-image: url('{{stateImage}}');">
           <!-- <img src="{{stateImage}}" alt="{{stateFullName}}" onerror="if (this.src != 'error.jpg') this.src = 'images/pic13.jpg';"/></span> -->
         </div>
-        <input type="text" ng-model="search" placeholder="filter me">
+      
+      <div class="row counties">
+          <div class="12u">
+            <p animate-on-change='stateImageText'>{{stateImageText}}</p>
+          </div>
+        </div>
+        
         <br />
         <div class="row counties">
-          <div class="4u 6u(medium) 12u(small)" ng-repeat="detail in stateDetails | filter:{ name: search } | orderBy:name:false">
+          
+        
+          <div class="4u 6u(medium) 12u(small)" ng-repeat="detail in stateDetails | filter:{ name: search } | orderBy:'name'">
+            <div class="county">
             <h2>
               <a target="_blank" href="{{detail.url}}" class="icon style1 {{icons[$index % icons.length]}}"></a>
-              <a target="_blank" href="{{detail.url}}">{{detail.name}}</a>
+              <a target="_blank" href="{{detail.url}}">{{detail.name.replace('County','')}}</a>
             </h2>
             <p>latitude: {{detail.primary_latitude}}, longitude: {{detail.primary_longitude}}</p>
             <div class="button big"">
@@ -44,7 +61,8 @@
             <a target="_blank" href="{{detail.url}}">
                   <img class="image" ng-if="!detail.removed" ng-src="{{imagery[detail.name]}}" />
             </a>
-            <hr />
+            <hr>
+          </div>
           </div>
         </div>
       </div>

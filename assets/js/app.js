@@ -22,90 +22,74 @@ app.controller("appController", ['$scope', 'getStates', function($scope, getStat
   getStates.get().then(function (msg) {
 
         $scope.states = msg.data;
-        console.log($scope.states);
+        //console.log($scope.states);
     });
 }]);
 
 app.controller("detailController", ['$scope', '$location', '$filter', 'getStates', 'getStateData', 'getImagery', function($scope, $location, $filter, getStates, getStateData, getImagery) {
 	$scope.imagery = {};
 	$scope.headerTitle = "Go Back";
-  thisState = $location.search().s;
+	thisState = $location.search().s;
 
-	$scope.icons = ["fa-globe","fa-map","fa-flag","fa-map-marker","fa-road"];
-
-	switchState = function () {
-		x = thisState;
-		$scope.imagery = {};
-		getStates.get().then(function (msg) {
-
+	getStates.get().then(function (msg) {
 	    $scope.states = msg.data;
-			thisAbbreviation = $scope.states[thisState].abbreviation;
-			console.log(thisAbbreviation);
+	    
+	    $scope.stateFullName = "State Not Found";
+	    $scope.stateImageText = "You sneaky rascal... You entered an invalid state";
+	    $scope.stateImage = "images/pic0" + Math.floor(Math.random() * 9) + ".jpg";
+		for (x = 0, stateLen = $scope.states.length; x < stateLen; x++) {
+			if (thisState == $scope.states[x].abbreviation) {
+				$scope.stateFullName = $scope.states[x].name;
+				$scope.stateImage = $scope.states[x].image;
+				$scope.stateImageText = $scope.states[x].imagetext;
+				getStateData.get(thisState).then(function (msg) {
 
-	    $scope.stateImage = $scope.states[x].image;
-			$scope.stateFullName = $scope.states[x].name;
-			// the file name contains the text description so format text for readability (remove path and extension, replace hyphens with spaces)
-			//$scope.stateImageText = $scope.stateImage.replace(/^.*[\\\/]/, '').replace(/-/g, ' ').replace('.jpg','').toUpperCase().replace($scope.stateFullName.toUpperCase(), "");
-			$scope.stateImageText = $scope.states[x].imagetext;
-
-			goGetStateData();
-		});
-
-  };
-	$scope.goForward = function() {
-		if(thisState == $scope.states.length - 1) {
-			thisState = 0;
-		} else {
-			thisState++;
+			        $scope.stateDetails = msg.data;
+			        
+			        for (var x=0; x < $scope.stateDetails.length; x++) {
+			        	$scope.stateDetails[x].clicked = false;
+			        	$scope.stateDetails[x].showRemove = false;
+			        	$scope.stateDetails[x].removed = false;
+			        }
+			    });
+				break;
+			}
 		}
-		thisAbbreviation = $scope.states[thisState].abbreviation;
-		switchState();
 
-	};
-	$scope.goBack = function() {
-		if(thisState == 0) {
-			thisState = $scope.states.length - 1;
+		if (x===0) {
+			$scope.nextState = $scope.states[x+1].abbreviation;
+			$scope.prevState = $scope.states[stateLen - 1].abbreviation;
+		} else if(x==stateLen-1) {
+			$scope.nextState = $scope.states[0].abbreviation;
+			$scope.prevState = $scope.states[x-1].abbreviation;
 		} else {
-			thisState--;
+			$scope.nextState = $scope.states[x+1].abbreviation;
+			$scope.prevState = $scope.states[x-1].abbreviation;
 		}
-		thisAbbreviation = $scope.states[thisState].abbreviation;
-		switchState();
-	};
-
-	goGetStateData = function() {
-
-	  getStateData.get(thisAbbreviation).then(function (msg) {
-
-	        $scope.stateDetails = msg.data;
-	        for (var x=0; x < $scope.stateDetails.length; x++) {
-	        	$scope.stateDetails[x].clicked = false;
-	        	$scope.stateDetails[x].showRemove = false;
-	        	$scope.stateDetails[x].removed = false;
-	        };
-	        console.log($scope.stateDetails);
-	    });
-	};
-	switchState();
+		// console.log(x + ' ' + $scope.nextState + ' ' + $scope.prevState);
+	});
+  	
+	$scope.icons = ["fa-globe","fa-map","fa-flag","fa-map-marker","fa-road"];
+	
 	function formatDate(thisdate) {
 		return $filter('date')(thisdate,'yyyy-MM-dd');
-
 	}
-	$scope.removeMap = function(i) {
-		
-		$scope.stateDetails[i].showRemove = false;
 
+	$scope.removeMap = function(i) {
+		$scope.stateDetails[i].showRemove = false;
 		$scope.stateDetails[i].removed = true;
 		$scope.stateDetails[i].url = null;
-		$scope.$apply;
-	}
+		$scope.$apply();
+	};
+
 	$scope.getAllLocations = function() {
 		for (var x=0; x < $scope.stateDetails.length; x++) {
 			$scope.stateDetails[x].showRemove=true;
 			$scope.stateDetails[x].removed=false;
 		}
 		setTimeout(function() {
-    		$('.pinned').click(); // tigger('click')
-		}, 3000);
+    		$('.pinned').click();
+		}, 1);
 		
 	};
 
@@ -114,7 +98,6 @@ app.controller("detailController", ['$scope', '$location', '$filter', 'getStates
 		url = "https://maps.googleapis.com/maps/api/staticmap?center="+lat+","+lon+"&zoom=11&size=400x400&key=AIzaSyBy34i8mK7IXxcAqmZfOEX70XZtNEt7D7s";
 		$scope.imagery[ndx] = url;
 
-		//console.log($scope.imagery);
 
 	};
 }]);

@@ -36,7 +36,7 @@
 		text-overflow: ellipsis;
 		text-transform: uppercase;
 		white-space: nowrap;
-
+		
 		&.icon {
 			&:before {
 				margin-right: 0.5em;
@@ -65,9 +65,10 @@
 
 		&.big {
 			font-size: 1em;
+			padding-bottom: 40px;
 		}
 		&.pinned {
-			bottom: 0;
+			
 			&:active {
 				border: none !important;
 			}

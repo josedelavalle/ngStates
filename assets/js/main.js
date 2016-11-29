@@ -32,6 +32,27 @@
 			if (skel.vars.touch)
 				$body.addClass('is-touch');
 
+
+		// sticky header
+		
+		$(window).on("scroll", function(e) {
+		  console.log($(window).scrollTop());
+		  if ($(window).scrollTop() > 49) {
+		  	
+		    $("#stateHeader").addClass("fixed");
+		    $("#myLogo").addClass("logoFixed");
+		  } else {
+		    $("#stateHeader").removeClass("fixed");
+		  }
+
+		  // if ($(window).scrollTop() > 314) {
+		  // 	console.log('here')
+		  // 	$("#imageContainer").addClass("imageFixed");
+		  // } else {
+		  // 	$("#imageContainer").removeClass("imageFixed");
+		  // }
+		  
+		});
 		// Forms.
 			var $form = $('form');
 

@@ -8,7 +8,7 @@
       <header>
         <h1>The 50 States - All Dressed Up</h1>
         <p>Web App that pulls United States State information from various REST APIs and collates data into an asetically pleasing web repository</p>
-        <input type="text" ng-model="search" placeholder="filter me">
+        <input type="text" ng-model="search" placeholder="filter states">
         <br />
       </header>
       <section class="tiles">
@@ -16,7 +16,7 @@
           <span class="image">
             <img ng-src="images/png/{{state.name.split(' ').join('-').toLowerCase()}}.png" alt="" />
           </span>
-          <a href="./1?s={{$index}}">
+          <a href="./1?s={{state.abbreviation}}">
             <h2>{{state.name}}</h2>
             <div class="content">
               <i>{{state.motto}}</i><br />
