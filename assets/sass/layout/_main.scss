@@ -10,7 +10,20 @@
 		@include padding(5em, 0, (-5em, 0, 3em, 0));
 
 		@include breakpoint(small) {
-			@include padding(3em, 0, (-3em, 0, 3em, 0));
+			//@include padding(3em, 0, (-3em, 0, 3em, 0));
+			.imageContainer {
+				background-attachment: scroll !important;
+			}
+			#stateHeader {
+				margin: 0 !important;
+				div {
+					padding: 0;
+				}
+			}
+			.fixed {
+				padding-bottom: 20px;
+				min-height: 170px;
+			}
 		}
 	}
 
@@ -30,7 +43,8 @@
 	}
 	.imageContainer {
 		z-index: 9998;
-
+		max-height: 500px;
+		
 	}
 	#filter-text {
 		padding-bottom: 40px;
@@ -63,10 +77,13 @@
 	#stateHeader {
 		z-index:2000;
 		// position: fixed;
-		padding:0;
+		//padding:0;
+		padding-top: 10px;
 		width:100%;
 		margin: 0 auto;
-		
+		div {
+			padding: 0;
+		}
 
 	}
 	.logoFixed {
@@ -80,36 +97,37 @@
 		position: fixed;
 		z-index:997;
 		padding:0;
-		margin:auto;
+		//margin:auto;
 		background: white;
-		position: fixed;
+		//position: fixed;
 		top:0;
 		width: 100%;
 		max-height: 48px;
 		right: 0;
 	    left: 0;
-	    margin-right: auto;
-	    margin-left: auto;
+	    //margin-right: auto;
+	    //margin-left: auto;
 	    /* give it dimensions */
 	    min-height: 10em;
-	    width: 90%;
-	overflow: hidden;
+	    width: 100%;
+		overflow: hidden;
 
 	}
 	.fixed {
 		z-index:997;
-		padding:0;
-		margin:auto;
+		padding:0 2.5em;
+		margin: 0 auto;
 		background: white;
 		position: fixed;
 		top:0;
 		width: 100%;
+		max-width: 68em;
 		max-height: 48px;
 		right: 0;
 	    left: 0;
-	    margin-right: auto;
-	    margin-left: auto;
+	    //margin-right: auto;
+	    //margin-left: auto;
 	    /* give it dimensions */
-	    min-height: 10em;
-	    width: 90%;
+	    min-height: 7em;
+	    width: 100%;
 	}

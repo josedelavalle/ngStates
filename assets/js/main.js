@@ -39,7 +39,7 @@
 		  console.log($(window).scrollTop());
 		  if ($(window).scrollTop() > 49) {
 		  	
-		    $("#stateHeader").addClass("fixed");
+		    //$("#stateHeader").addClass("fixed");
 		    $("#myLogo").addClass("logoFixed");
 		  } else {
 		    $("#stateHeader").removeClass("fixed");
