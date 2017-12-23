@@ -16,59 +16,123 @@ app.config(['$routeProvider', '$locationProvider', function($routeProvider, $loc
   	redirectTo: '/'
   });
 }]);
-app.controller("appController", ['$scope', 'getStates', function($scope, getStates) {
+
+app.factory('appFactory', function($http) {
+	return {
+		getStates: function () {
+            return $http.get('./assets/json/states.json');
+        },
+        getStateData: function(thisState) {
+			return $http.get('./assets/json/' + thisState + '.json');
+        },
+        getPhotos: function(page_num, lat, lon) {
+            var flckrKey = 'b30f2299fbe2a166e4beb4da659c792d';
+            return $http.get('https://api.flickr.com/services/rest/?method=flickr.photos.search&format=json&nojsoncallback=1&per_page=12&page='+page_num+'&extras=url_m,description&api_key=' + flckrKey + '&lat=' + lat + '&lon=' + lon);
+        },
+		getStreetView: function (lat, lon, thisDate) {
+			//var thisURL = 'https://api.nasa.gov/planetary/earth/imagery?lon=' + lon + '&lat=' + lat + '&date=' + thisDate + '&cloud_score=True&api_key=sFBD6hSaJ9HBP6U8qhXaBv6v9pKcTYtICStGJlOA';
+			// var thisURL = "https://maps.googleapis.com/maps/api/staticmap?lon=58.76&lon=-156.83&zoom=13&size=600x300&maptype=roadmap&key=AIzaSyBy34i8mK7IXxcAqmZfOEX70XZtNEt7D7s";
+			var thisURL = "https://maps.googleapis.com/maps/api/streetview?size=600x300&location=46.414382,10.013988&heading=151.78&pitch=-0.76&key=AIzaSyBy34i8mK7IXxcAqmZfOEX70XZtNEt7D7s"
+			console.log(thisURL);
+			return $http.get(thisURL);
+			// return $http.get('https://api.nasa.gov/planetary/earth/imagery?lon=' + lon + '&lat=' + lat + '&date=2014-02-01&cloud_score=True&api_key=sFBD6hSaJ9HBP6U8qhXaBv6v9pKcTYtICStGJlOA');
+        }
+	};
+});
+
+
+app.controller("appController", ['$scope', 'appFactory', function($scope, appFactory) {
 
 	$scope.headerTitle = "Jose DeLavalle";
-  getStates.get().then(function (msg) {
+  	appFactory.getStates().then(function (msg) {
 
         $scope.states = msg.data;
         //console.log($scope.states);
     });
 }]);
 
-app.controller("detailController", ['$scope', '$location', '$filter', 'getStates', 'getStateData', 'getImagery', function($scope, $location, $filter, getStates, getStateData, getImagery) {
+app.controller("detailController", ['$scope', '$location', '$filter', 'appFactory', function($scope, $location, $filter, appFactory) {
 	$scope.imagery = {};
 	$scope.headerTitle = "Go Back";
+	var states;
 	thisState = $location.search().s;
 
-	getStates.get().then(function (msg) {
-	    $scope.states = msg.data;
-	    
-	    $scope.stateFullName = "State Not Found";
-	    $scope.stateImageText = "You sneaky rascal... You entered an invalid state";
-	    $scope.stateImage = "images/pic0" + Math.floor(Math.random() * 9) + ".jpg";
-		for (x = 0, stateLen = $scope.states.length; x < stateLen; x++) {
-			if (thisState == $scope.states[x].abbreviation) {
-				$scope.stateFullName = $scope.states[x].name;
-				$scope.stateImage = $scope.states[x].image;
-				$scope.stateImageText = $scope.states[x].imagetext;
-				getStateData.get(thisState).then(function (msg) {
+	appFactory.getStates().then(function (msg) {
+	    states = msg.data;
+	    //console.log('got state details', msg.data, thisState)
+	  
+	    var x = states.findIndex(x => x.abbreviation === thisState);
+	    $scope.state = states[x];
+	    //console.log('this state ' + thisState, $scope.state, x)
+	    appFactory.getStateData(thisState).then(function (msg) {
+	    	console.log('got details', msg);
+	        $scope.stateDetails = msg.data;
+	        $scope.stateDetails.forEach(function(item) {
+	        	item.fav = false;
+	        });
+	    });
 
-			        $scope.stateDetails = msg.data;
-			        
-			        for (var x=0; x < $scope.stateDetails.length; x++) {
-			        	$scope.stateDetails[x].clicked = false;
-			        	$scope.stateDetails[x].showRemove = false;
-			        	$scope.stateDetails[x].removed = false;
-			        }
-			    });
-				break;
-			}
-		}
-
-		if (x===0) {
-			$scope.nextState = $scope.states[x+1].abbreviation;
-			$scope.prevState = $scope.states[stateLen - 1].abbreviation;
-		} else if(x==stateLen-1) {
-			$scope.nextState = $scope.states[0].abbreviation;
-			$scope.prevState = $scope.states[x-1].abbreviation;
-		} else {
-			$scope.nextState = $scope.states[x+1].abbreviation;
-			$scope.prevState = $scope.states[x-1].abbreviation;
-		}
+		setupPaging(x);
 		// console.log(x + ' ' + $scope.nextState + ' ' + $scope.prevState);
 	});
-  	
+
+	var setupPaging = function(x) {
+		if (x===0) {
+			$scope.nextState = states[x+1].abbreviation;
+			$scope.prevState = states[states.length - 1].abbreviation;
+		} else if(x==states.length -1) {
+			$scope.nextState = states[0].abbreviation;
+			$scope.prevState = states[x-1].abbreviation;
+		} else {
+			$scope.nextState = states[x+1].abbreviation;
+			$scope.prevState = states[x-1].abbreviation;
+		}
+	}
+
+	$scope.favorite = function(item) {
+		item.fav = !item.fav;
+		console.log(item);
+	};
+
+	$scope.getPhotos = function(item) {
+		var page_num = 1;
+		var lat = item.primary_latitude;
+		var lon = item.primary_longitude;
+
+		appFactory.getPhotos(page_num, lat, lon).then(function(res) {
+			item.ndx = 0;
+			console.log('got photos from ' + lat + ',' + lon, res);
+			item.photos = res.data.photos;
+			if (item.photos.photo.length == 0) {
+				item.photos = null;
+				item.nophotos = true;
+			}
+			console.log('item', item);
+		}).catch(function(e) {
+			console.log('error getting photos', e);
+		});
+	};
+	$scope.ndx = 0;
+	$scope.goNext = function(item) {
+		if (!item.photos) return null;
+		item.ndx++;
+		if (item.ndx >= item.photos.photo.length) item.ndx = 0;
+	};
+	$scope.goPrev = function(item) {
+		if (!item.photos) return null;
+		item.ndx--;
+		if (item.ndx <= 0) item.ndx = item.photos.photo.length - 1;
+	};
+  	$scope.getStreetView = function(item) {
+  		console.log('get photos', item);
+  		appFactory.getStreetView(item.primary_latitude, item.primary_longitude).then(function(res) {
+  			console.log('got imagery', res);
+  			item.streetview = res.data;
+  		}).catch(function(e) {
+  			console.log('error getting imagery', e);
+  		});
+  	};
+
 	$scope.icons = ["fa-globe","fa-map","fa-flag","fa-map-marker","fa-road"];
 	
 	function formatDate(thisdate) {
@@ -93,44 +157,17 @@ app.controller("detailController", ['$scope', '$location', '$filter', 'getStates
 		
 	};
 
-	$scope.getLocation = function(lat, lon, ndx) {
-
+	$scope.getLocation = function(item) {
+		var lat = item.primary_latitude;
+		var lon = item.primary_longitude;
+		var ndx = item.name;
+		item.clicked = true;
 		url = "https://maps.googleapis.com/maps/api/staticmap?center="+lat+","+lon+"&zoom=11&size=400x400&key=AIzaSyBy34i8mK7IXxcAqmZfOEX70XZtNEt7D7s";
 		$scope.imagery[ndx] = url;
 
 
 	};
 }]);
-
-app.factory('getStates', function ($http) {
-    return {
-        get: function () {
-
-            return $http.get('./assets/json/states.json');
-        }
-    };
-});
-
-app.factory('getStateData', function ($http) {
-    return {
-        get: function (thisState) {
-            return $http.get('./assets/json/' + thisState + '.json');
-        }
-    };
-});
-
-app.factory('getImagery', function ($http) {
-    return {
-        get: function (lat, lon, thisDate) {
-						//var thisURL = 'https://api.nasa.gov/planetary/earth/imagery?lon=' + lon + '&lat=' + lat + '&date=' + thisDate + '&cloud_score=True&api_key=sFBD6hSaJ9HBP6U8qhXaBv6v9pKcTYtICStGJlOA';
-						// var thisURL = "https://maps.googleapis.com/maps/api/staticmap?lon=58.76&lon=-156.83&zoom=13&size=600x300&maptype=roadmap&key=AIzaSyBy34i8mK7IXxcAqmZfOEX70XZtNEt7D7s";
-						var thisURL = "https://maps.googleapis.com/maps/api/streetview?size=600x300&location=46.414382,10.013988&heading=151.78&pitch=-0.76&key=AIzaSyBy34i8mK7IXxcAqmZfOEX70XZtNEt7D7s"
-						console.log(thisURL);
-            return $http.get(thisURL);
-						// return $http.get('https://api.nasa.gov/planetary/earth/imagery?lon=' + lon + '&lat=' + lat + '&date=2014-02-01&cloud_score=True&api_key=sFBD6hSaJ9HBP6U8qhXaBv6v9pKcTYtICStGJlOA');
-        }
-    };
-});
 
 app.directive('animateOnChange', function($timeout) {
     return function(scope, element, attr) {

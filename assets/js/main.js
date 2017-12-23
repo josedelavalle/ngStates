@@ -36,7 +36,7 @@
 		// sticky header
 		
 		$(window).on("scroll", function(e) {
-		  console.log($(window).scrollTop());
+		  //console.log($(window).scrollTop());
 		  if ($(window).scrollTop() > 49) {
 		  	
 		    //$("#stateHeader").addClass("fixed");

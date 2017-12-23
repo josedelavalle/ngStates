@@ -9,6 +9,11 @@
 	#main {
 		@include padding(5em, 0, (-5em, 0, 3em, 0));
 
+		@include breakpoint(large) {
+			#camera-icon {
+				margin-right: 25px !important;
+			}
+		}
 		@include breakpoint(small) {
 			//@include padding(3em, 0, (-3em, 0, 3em, 0));
 			.imageContainer {
@@ -24,22 +29,127 @@
 				padding-bottom: 20px;
 				min-height: 170px;
 			}
+			.button-container {
+				top: 60px;
+				font-size: 2em;
+				margin-right: 0.8em;
+			}
+		}
+		@include breakpoint(xsmall) {
+			.button-container {
+				top: 30px;
+			}
 		}
 	}
+	.margin-0 {
+		margin: 0 !important;
+	}
+	#thisImage {
+		transition: all 1s ease-in-out !important;
+	}
+	.image {
+		&:hover {
+			#image-coords {
+				display: inline;
+			}
+		}
+	}
+	.show-link {
+		display: none;
+	}
+	.gov-link {
+		margin-top: -40px;
+		width: 100%;
+		&:hover {
+			.show-link {
+				display: block !important;
+			}
 
+		}
+		.url-text {
+			//font-size: 12px !important;
+		}
+	}
+	.button-row {
+		text-align: center;
+		width: 100%;
+		margin: 0;
+		padding: 0;
+	}
+	.button-container {
+		position: relative;
+		font-size: 1.6em;
+		padding: 10px;
+		height: 30px;
+		width: 30px;
+		top: 30px;
+		z-index: 40;
+		cursor: pointer;
+	}
+	.fa-heart {
+		color: #F3CE00;
+		-webkit-text-stroke: 2px black;
+	}
+	.image-coords {
+		//display: none;
+		
+		margin-bottom: 0;
+		width: 100%;
+		background-color: rgba(10,10,10,0.6);
+	    top: -50px;
+	    position: relative;
+	    color: white;
+	    padding: 10px;
+	    .fa {
+	    	cursor: pointer;
+	    	margin-top: 7px;
+	    	position: absolute;
+	    	bottom: 10px;
+	    }
+	    .small {
+	    	font-size: 9px;
+	    }
+	    span {
+	    	margin: 5px 25px;
+	    	
+	    	line-height: 1em;
+	    	display: block;
+	    	overflow: hidden;
+	    }
+	    .fa-chevron-right {
+	    	right: 5px;	
+	   	}
+	    .fa-chevron-left {
+	    	left: 5px;
+	    }
+	}
 	.counties {
 		display: flex;
 		flex-wrap: wrap;
+		text-align: center;
+		
+		input {
+			border-bottom: none !important;
+		}
 	}
 
+	#camera-icon {
+		margin-right: 20px;
+	}
 	.county {
 		padding-top:15px;
-		padding-bottom:10px;
+		//padding-bottom:10px;
 		.inner {
     		border-bottom: 1px #ddd solid;
     		height: 100%;
     	}
 
+	}
+	
+	.state-info {
+		margin-left: 2em;
+		padding-left: 0;
+		
 	}
 	.imageContainer {
 		z-index: 9998;
@@ -48,6 +158,9 @@
 	}
 	#filter-text {
 		padding-bottom: 40px;
+	}
+	.border-bottom {
+		border-bottom: 1px solid #ddd;
 	}
 	#imageText {
 		position: fixed;

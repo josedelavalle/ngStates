@@ -15,7 +15,10 @@
 
 /* slide in from the bottom */
 @keyframes slideOutLeft {
-    to      { transform: translateX(-400%); }
+    to      { 
+              transform: translateX(-50px);
+              opacity: 0;
+            }
 }
 @keyframes slideOutLeftScreen {
     to      { transform: translateX(-100%); }
@@ -34,7 +37,9 @@
 
 /* slide in from the right */
 @keyframes slideInRight {
-    from    { transform:translateX(100%); }
+    from    { transform:translateX(40px);
+            opacity: 0;
+     }
     to      { transform: translateX(0); }
 }
 
@@ -44,13 +49,29 @@
     to      { transform: translateY(0); }
 }
 
-  
-
-#main {
-  .ng-enter          { animation: slideInRight 0.6s both ease-in-out; z-index: 8889; }
-  .ng-leave           { animation: slideOutLeft 0.3s both ease-in-out; z-index: 8889; }
+@keyframes fadeIn {
+  from { opacity: 0; }
 }
 
+@keyframes fadeIn {
+  to { opacity: 0; }
+}
+
+  
+
+// #main {
+//   .ng-enter          { animation: slideInRight 0.6s both ease-in-out; z-index: 8889; }
+//   .ng-leave           { animation: slideOutLeft 0.3s both ease-in-out; z-index: 8889; }
+// }
+#thisImage {
+
+  
+   // animation: fadeIn 1s ease-in-out;
+  
+  .ng-leave {
+    //animation: fadeOut 1s ease-in-out;
+  }
+}
 [animate-on-change] {
   opacity: 1;
   transition: all 0.5s ease-in-out;
