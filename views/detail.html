@@ -44,24 +44,24 @@
         
           <div class="4u 6u(medium) 12u(small)" ng-repeat="detail in stateDetails | filter:{ name: search } | orderBy:['-fav','name']">
             <div class="county">
-            <h2 class="margin-bottom-10">
-              <a target="_blank" href="{{detail.url}}" class="icon style1 {{icons[$index % icons.length]}}"></a>
-              <a target="_blank" href="{{detail.url}}">{{detail.name.replace('County','')}}</a>
-            </h2>
-            <div class="button-row">
-              <div ng-click="favorite(detail)" ng-class="{'fa-heart': detail.fav, 'fa-heart-o': !detail.fav}" class="button-container pull-left fa"></div>
-              <div ng-show="!detail.photos && !detail.nophotos" id="camera-icon" ng-click="getPhotos(detail)" class="button-container pull-right fa fa-camera"></div>
-              <div ng-show="detail.photos" id="camera-icon" ng-click="detail.photos=null" class="button-container pull-right fa fa-map"></div>
-            </div>
-            <img ng-if="!detail.photos" class="image" ng-src="{{imagery[detail.name]}}" ng-init="getLocation(detail)"/>
-            <img ng-if="detail.photos" class="image" src="{{detail.photos.photo[detail.ndx].url_m}}" />
-            <p class="image-coords">
-              <i ng-show="detail.photos" class="fa fa-chevron-left" ng-click="goPrev(detail)"></i>
-              
-              <span ng-if="detail.photos">{{detail.photos.photo[detail.ndx].title}}</span>
-              <span ng-class="{'small':detail.photos}">latitude: {{detail.primary_latitude}}, longitude: {{detail.primary_longitude}}</span>
-              <i ng-show="detail.photos" class="fa fa-chevron-right" ng-click="goNext(detail)"></i>
-            </p>
+              <h2 class="margin-0">
+                <a target="_blank" href="{{detail.url}}" class="icon style1 {{icons[$index % icons.length]}}"></a>
+                <a target="_blank" href="{{detail.url}}">{{detail.name.replace('County','')}}</a>
+              </h2>
+              <div class="button-row">
+                <div ng-click="favorite(detail)" ng-class="{'fa-heart': detail.fav, 'fa-heart-o': !detail.fav}" class="button-container pull-left fa"></div>
+                <div ng-show="!detail.photos && !detail.nophotos" id="camera-icon" ng-click="getPhotos(detail)" class="button-container pull-right fa fa-camera"></div>
+                <div ng-show="detail.photos" id="camera-icon" ng-click="detail.photos=null" class="button-container pull-right fa fa-map"></div>
+              </div>
+              <img ng-if="!detail.photos" class="image" ng-src="{{imagery[detail.name]}}" ng-init="getLocation(detail)"/>
+              <img ng-if="detail.photos" ng-click="openModal(detail)"class="image" src="{{detail.photos.photo[detail.ndx].url_m}}" />
+              <p class="image-coords">
+                <i ng-show="detail.photos" class="fa fa-chevron-left" ng-click="goPrev(detail)"></i>
+                
+                <span ng-if="detail.photos">{{detail.photos.photo[detail.ndx].title}}</span>
+                <span ng-class="{'small':detail.photos}">latitude: {{detail.primary_latitude}}, longitude: {{detail.primary_longitude}}</span>
+                <i ng-show="detail.photos" class="fa fa-chevron-right" ng-click="goNext(detail)"></i>
+              </p>
             
             </div>
 
@@ -76,8 +76,8 @@
            
             <hr>
           </div>
-          </div>
         </div>
       </div>
     </div>
   </div>
+

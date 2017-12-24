@@ -1,4 +1,4 @@
-var app = angular.module('myApp', ['ngRoute', 'ngAnimate']);
+var app = angular.module('myApp', ['ngRoute', 'ngAnimate', 'ui.bootstrap']);
 app.config(['$routeProvider', '$locationProvider', function($routeProvider, $locationProvider){
 
 	//ChartJsProvider.setOptions({ chartColors: myChartColors });
@@ -51,7 +51,39 @@ app.controller("appController", ['$scope', 'appFactory', function($scope, appFac
     });
 }]);
 
-app.controller("detailController", ['$scope', '$location', '$filter', 'appFactory', function($scope, $location, $filter, appFactory) {
+app.controller('modalController', ['$scope', '$uibModalInstance', 'items', 'currentIndex', function($scope, $uibModalInstance, items, currentIndex) {
+		console.log('modal controller', items, currentIndex);
+		$scope.items = items;
+		$scope.currentIndex = currentIndex;
+
+		$scope.cancel = function () {
+			$uibModalInstance.dismiss();
+		};
+
+		$scope.goNext = function(e) {
+			e.stopPropagation();
+			$scope.currentIndex++;
+			if ($scope.currentIndex >= $scope.items.length) {
+				$scope.currentIndex = 0;
+			}
+			console.log(e, $scope.currentIndex);
+		};
+		$scope.goPrev = function(e) {
+			e.stopPropagation();
+			$scope.currentIndex--;
+			if ($scope.currentIndex < 0) {
+				$scope.currentIndex = $scope.items.length - 1;
+			}
+			console.log(e, $scope.currentIndex);
+		};
+
+		$scope.$on('more-clicked', function() {
+			console.log('more clicked event heard')
+			$scope.cancel();
+		});
+	}]);
+
+app.controller("detailController", ['$scope', '$location', '$filter', 'appFactory', '$uibModal', function($scope, $location, $filter, appFactory, $uibModal) {
 	$scope.imagery = {};
 	$scope.headerTitle = "Go Back";
 	var states;
@@ -123,6 +155,22 @@ app.controller("detailController", ['$scope', '$location', '$filter', 'appFactor
 		item.ndx--;
 		if (item.ndx <= 0) item.ndx = item.photos.photo.length - 1;
 	};
+
+	$scope.openModal = function(item) {
+		var modalInstance = $uibModal.open({
+      		  templateUrl: '/partials/modal.html',
+		      controller: 'modalController',
+		      windowClass: 'large-Modal',
+		      resolve: {
+		        items: function () {
+		          return item.photos.photo;
+		        },
+		        currentIndex: function () {
+		        	return item.ndx;
+		        }
+		      }
+			});
+	}
   	$scope.getStreetView = function(item) {
   		console.log('get photos', item);
   		appFactory.getStreetView(item.primary_latitude, item.primary_longitude).then(function(res) {
