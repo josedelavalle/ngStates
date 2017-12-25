@@ -145,12 +145,14 @@ app.controller("detailController", ['$scope', '$location', '$filter', 'appFactor
 		});
 	};
 	$scope.ndx = 0;
-	$scope.goNext = function(item) {
+	$scope.goNext = function(item, e) {
+		e.stopPropagation();
 		if (!item.photos) return null;
 		item.ndx++;
 		if (item.ndx >= item.photos.photo.length) item.ndx = 0;
 	};
-	$scope.goPrev = function(item) {
+	$scope.goPrev = function(item, e) {
+		e.stopPropagation();
 		if (!item.photos) return null;
 		item.ndx--;
 		if (item.ndx <= 0) item.ndx = item.photos.photo.length - 1;

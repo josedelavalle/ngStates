@@ -63,6 +63,9 @@
   to {
     opacity: 0; } }
 
+.gov-link {
+  transition: all 1s ease-in-out; }
+
 [animate-on-change] {
   opacity: 1;
   transition: all 0.5s ease-in-out;
@@ -2823,7 +2826,6 @@ body.is-menu-visible #menu {
       padding-bottom: 20px;
       min-height: 170px; }
     #main .button-container {
-      top: 60px;
       font-size: 2em;
       margin-right: 0.8em; } }
   @media screen and (max-width: 480px) {
@@ -2836,14 +2838,11 @@ body.is-menu-visible #menu {
 #thisImage {
   transition: all 1s ease-in-out !important; }
 
-.image:hover #image-coords {
-  display: inline; }
-
 .show-link {
   display: none; }
 
 .gov-link {
-  margin-top: -40px;
+  margin-top: 10px;
   width: 100%; }
   .gov-link:hover .show-link {
     display: block !important; }
@@ -2862,7 +2861,7 @@ body.is-menu-visible #menu {
   padding: 10px;
   height: 30px;
   width: 30px;
-  top: 30px;
+  bottom: 0px;
   z-index: 40;
   cursor: pointer; }
 
@@ -2871,10 +2870,12 @@ body.is-menu-visible #menu {
   -webkit-text-stroke: 2px black; }
 
 .image-coords {
+  margin: auto;
   margin-bottom: 0;
   width: 100%;
+  height: 100%;
   background-color: rgba(10, 10, 10, 0.6);
-  top: -50px;
+  top: -40px;
   position: relative;
   color: white;
   padding: 10px; }
@@ -3077,6 +3078,14 @@ body.is-menu-visible #menu {
     color: white;
     cursor: pointer; }
 
+#card-image-container {
+  height: auto;
+  min-height: 300px;
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center; }
+
 #modal-image-container {
   position: absolute;
   top: 0;
@@ -3107,8 +3116,7 @@ body.is-menu-visible #menu {
     font-size: 15px; }
   #image-info .fa {
     position: absolute;
-    top: 50%;
-    margin-top: -20px;
+    top: 10px;
     color: #fff;
     font-size: 30px;
     padding: 10px;

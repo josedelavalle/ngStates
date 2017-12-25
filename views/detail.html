@@ -53,14 +53,14 @@
                 <div ng-show="!detail.photos && !detail.nophotos" id="camera-icon" ng-click="getPhotos(detail)" class="button-container pull-right fa fa-camera"></div>
                 <div ng-show="detail.photos" id="camera-icon" ng-click="detail.photos=null" class="button-container pull-right fa fa-map"></div>
               </div>
-              <img ng-if="!detail.photos" class="image" ng-src="{{imagery[detail.name]}}" ng-init="getLocation(detail)"/>
-              <img ng-if="detail.photos" ng-click="openModal(detail)"class="image" src="{{detail.photos.photo[detail.ndx].url_m}}" />
+              <div ng-if="!detail.photos" id="card-image-container" style="background-image: url('{{imagery[detail.name]}}')" ng-init="getLocation(detail)"></div>
+              <div ng-if="detail.photos" ng-click="openModal(detail)" id="card-image-container" style="background-image: url('{{detail.photos.photo[detail.ndx].url_m}}')"></div>
               <p class="image-coords">
-                <i ng-show="detail.photos" class="fa fa-chevron-left" ng-click="goPrev(detail)"></i>
+                <i ng-show="detail.photos" class="fa fa-chevron-left" ng-click="goPrev(detail, $event)"></i>
                 
                 <span ng-if="detail.photos">{{detail.photos.photo[detail.ndx].title}}</span>
                 <span ng-class="{'small':detail.photos}">latitude: {{detail.primary_latitude}}, longitude: {{detail.primary_longitude}}</span>
-                <i ng-show="detail.photos" class="fa fa-chevron-right" ng-click="goNext(detail)"></i>
+                <i ng-show="detail.photos" class="fa fa-chevron-right" ng-click="goNext(detail, $event)"></i>
               </p>
             
             </div>

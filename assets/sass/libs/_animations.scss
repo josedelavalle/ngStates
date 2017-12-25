@@ -72,6 +72,9 @@
     //animation: fadeOut 1s ease-in-out;
   }
 }
+.gov-link {
+  transition: all 1s ease-in-out;
+}
 [animate-on-change] {
   opacity: 1;
   transition: all 0.5s ease-in-out;
