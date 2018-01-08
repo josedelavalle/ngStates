@@ -2846,6 +2846,8 @@ body.is-menu-visible #menu {
   width: 100%; }
   .gov-link:hover .show-link {
     display: block !important; }
+  .gov-link .url-text {
+    letter-spacing: 1px; }
 
 .button-row {
   text-align: center;
@@ -2875,7 +2877,6 @@ body.is-menu-visible #menu {
   width: 100%;
   height: 100%;
   background-color: rgba(10, 10, 10, 0.6);
-  top: -40px;
   position: relative;
   color: white;
   padding: 10px; }
@@ -2908,6 +2909,8 @@ body.is-menu-visible #menu {
 
 .county {
   padding-top: 15px; }
+  .county h2 {
+    letter-spacing: 0; }
   .county .inner {
     border-bottom: 1px #ddd solid;
     height: 100%; }
@@ -3090,12 +3093,12 @@ body.is-menu-visible #menu {
   position: absolute;
   top: 0;
   left: 0;
-  height: 100vw;
+  height: 100%;
   width: 100vw;
   padding-top: 0px;
   background-repeat: no-repeat;
   background-size: contain;
-  background-position: top center;
+  background-position: center center;
   transition: all 1s ease-in-out; }
 
 #image-info {
